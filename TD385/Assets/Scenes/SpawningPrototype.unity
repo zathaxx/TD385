@@ -128,30 +128,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 606044978}
-  - component: {fileID: 606044977}
+  - component: {fileID: 606044979}
   m_Layer: 0
-  m_Name: GameController
+  m_Name: SpawnManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &606044977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 606044976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4783c17c87136a14a92701cd20456c45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cooldown: 0
-  setCooldown: 0
-  spawns: []
-  index: 0
 --- !u!4 &606044978
 Transform:
   m_ObjectHideFlags: 0
@@ -167,6 +151,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &606044979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606044976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4783c17c87136a14a92701cd20456c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldown: 0
+  delay: 0
+  spawns: []
+  spawnIndex: 0
+  enemyIndex: 0
+  speeds: []
+  enemies:
+  - {fileID: 1135880992752302641, guid: 30b44a58af187324cafd0a57694eb07b, type: 3}
+  - {fileID: 546614000248213466, guid: dbb05b0731601f448a363b988005090b, type: 3}
+  - {fileID: 6759749102563557172, guid: b2b29928479ccb24ea3728a3ef4b21ca, type: 3}
 --- !u!1 &1962567528
 GameObject:
   m_ObjectHideFlags: 0
