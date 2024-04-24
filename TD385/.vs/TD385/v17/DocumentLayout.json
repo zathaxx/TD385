@@ -37,8 +37,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-22T23:13:47.194Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -50,8 +49,7 @@
               "RelativeToolTip": "..\\..\\..\\Project 3\\Hero\\Assets\\Scripts\\Projectile.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T21:51:37.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T21:51:37.748Z"
             },
             {
               "$type": "Document",
@@ -61,7 +59,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpawnManager.cs",
               "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\SpawnManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\SpawnManager.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwA4AAAA0AAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwA4AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T21:48:31.966Z",
               "EditorCaption": ""
@@ -76,8 +74,7 @@
               "RelativeToolTip": "..\\..\\..\\Project2\\Create with Code\\Prototype 2\\Assets\\Scripts\\SpawnManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T21:44:43.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T21:44:43.072Z"
             }
           ]
         }

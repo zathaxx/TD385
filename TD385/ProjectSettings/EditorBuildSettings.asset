@@ -8,8 +8,11 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TD385.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Defense Towers.unity
     guid: 36bd6a681e7b97d48899aea6c19d7522
+  - enabled: 1
+    path: Assets/Scenes/SpawningPrototype.unity
+    guid: 8241c5da061fb9240a0c5028b501b0c6
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

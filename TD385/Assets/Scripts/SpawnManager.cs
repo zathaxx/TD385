@@ -15,7 +15,7 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cooldown = 2.5f;
+        cooldown = 1f;
         spawns = new float[5];
         float f = 4f;
         for (int i = 0; i < spawns.Length; i++)
