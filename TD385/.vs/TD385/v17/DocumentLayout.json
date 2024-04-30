@@ -3,31 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|c:\\users\\paul\\desktop\\uwbothell\\spring2024\\css385\\github\\td385\\td385\\assets\\scripts\\entityproperies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entityproperies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|c:\\users\\paul\\desktop\\uwbothell\\spring2024\\css385\\github\\td385\\td385\\assets\\scenes\\scripts\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|c:\\users\\paul\\desktop\\uwbothell\\spring2024\\css385\\github\\td385\\td385\\assets\\scripts\\bulletbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bulletbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|c:\\users\\paul\\desktop\\uwbothell\\spring2024\\css385\\github\\td385\\td385\\assets\\scenes\\scripts\\enemy prototype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\enemy prototype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|c:\\users\\paul\\desktop\\uwbothell\\spring2024\\css385\\github\\td385\\td385\\assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|c:\\users\\paul\\desktop\\uwbothell\\spring2024\\css385\\github\\td385\\td385\\assets\\scripts\\charcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\charcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Project5\\Deliverables\\Assets\\Scripts\\Hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|c:\\users\\paul\\desktop\\uwbothell\\spring2024\\css385\\github\\td385\\td385\\assets\\scripts\\enemy prototype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy prototype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|c:\\users\\paul\\desktop\\uwbothell\\spring2024\\css385\\github\\td385\\td385\\assets\\scripts\\weaponbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weaponbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|c:\\users\\paul\\desktop\\uwbothell\\spring2024\\css385\\github\\td385\\td385\\assets\\scenes\\scripts\\entityproperies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\entityproperies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,97 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Hero.cs",
-              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Project5\\Deliverables\\Assets\\Scripts\\Hero.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Project5\\Deliverables\\Assets\\Scripts\\Hero.cs",
-              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Project5\\Deliverables\\Assets\\Scripts\\Hero.cs",
-              "RelativeToolTip": "..\\..\\..\\Project5\\Deliverables\\Assets\\Scripts\\Hero.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "EntityProperies.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scenes\\Scripts\\EntityProperies.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Scripts\\EntityProperies.cs",
+              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scenes\\Scripts\\EntityProperies.cs*",
+              "RelativeToolTip": "Assets\\Scenes\\Scripts\\EntityProperies.cs*",
+              "ViewState": "AQIAADAAAAAAAAAAAAAYwDEAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T22:53:41.687Z",
+              "WhenOpened": "2024-04-30T19:08:12.325Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BulletBehaviour.cs",
-              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\BulletBehaviour.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\BulletBehaviour.cs",
-              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\BulletBehaviour.cs",
-              "RelativeToolTip": "Assets\\Scripts\\BulletBehaviour.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAlAAAA",
+              "Title": "Enemy Prototype.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scenes\\Scripts\\Enemy Prototype.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Scripts\\Enemy Prototype.cs",
+              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scenes\\Scripts\\Enemy Prototype.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Scripts\\Enemy Prototype.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T22:50:36.592Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CharController.cs",
-              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\CharController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CharController.cs",
-              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\CharController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CharController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T22:49:46.356Z",
+              "WhenOpened": "2024-04-30T19:06:58.624Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EntityProperies.cs",
-              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\EntityProperies.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\EntityProperies.cs",
-              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\EntityProperies.cs",
-              "RelativeToolTip": "Assets\\Scripts\\EntityProperies.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Title": "SpawnManager.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scenes\\Scripts\\SpawnManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Scripts\\SpawnManager.cs",
+              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scenes\\Scripts\\SpawnManager.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Scripts\\SpawnManager.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwCsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T22:46:12.351Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HealthBar.cs",
-              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\HealthBar.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\HealthBar.cs",
-              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\HealthBar.cs",
-              "RelativeToolTip": "Assets\\Scripts\\HealthBar.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T22:45:57.283Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WeaponBehavior.cs",
-              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\WeaponBehavior.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\WeaponBehavior.cs",
-              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\WeaponBehavior.cs",
-              "RelativeToolTip": "Assets\\Scripts\\WeaponBehavior.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T22:45:45.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Enemy Prototype.cs",
-              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\Enemy Prototype.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy Prototype.cs",
-              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\Enemy Prototype.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy Prototype.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAgwDMAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T22:45:17.413Z",
+              "WhenOpened": "2024-04-30T19:02:06.144Z",
               "EditorCaption": ""
             }
           ]
