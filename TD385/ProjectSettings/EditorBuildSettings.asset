@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TD385.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SpawningPrototype.unity
     guid: 8241c5da061fb9240a0c5028b501b0c6
+  - enabled: 1
+    path: Assets/Scenes/UI.unity
+    guid: 830ab967f61141942811eee4b7079a3e
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
