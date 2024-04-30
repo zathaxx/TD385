@@ -7,10 +7,14 @@ public class EnemyPrototype : MonoBehaviour
     public int speed;
     public float cooldown;
     private int initialSpeed;
+    private GameObject weapon;
+
+    public int health;
     // Start is called before the first frame update
     void Start()
     {
         initialSpeed = speed;
+        health = 100;
     }
 
     // Update is called once per frame
@@ -24,7 +28,7 @@ public class EnemyPrototype : MonoBehaviour
         {
             speed = 0;
             Vector3 pos = transform.position;
-            GameObject weapon = Instantiate(Resources.Load("Prefabs/Weapon") as GameObject);
+            weapon = Instantiate(Resources.Load("Prefabs/Weapon") as GameObject);
             weapon.transform.position = new Vector3(pos.x, pos.y + 0.5f, pos.z);  
         }
         if(collision.tag == "Gold")
@@ -33,6 +37,21 @@ public class EnemyPrototype : MonoBehaviour
         }
     }
     private void OnTriggerExit2D(Collider2D collision){
-        speed = initialSpeed;
+        
+        if (collision.tag == "Tower")
+        {
+            speed = initialSpeed;
+            Destroy(weapon);
+        }
+    }
+    public void takeDamage(int damage)
+    {
+        health -= damage;
+        if (health < 0)
+        {
+            if (weapon != null)
+                Destroy(weapon);
+            Destroy(transform.gameObject);
+        }
     }
 }

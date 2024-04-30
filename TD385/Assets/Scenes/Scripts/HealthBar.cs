@@ -7,6 +7,12 @@ public class HealthBar : MonoBehaviour
     public Gradient gradient;
     public Image fill;
 
+    private bool hidden;
+
+    private void Start()
+    {
+        hidden = false;
+    }
     public void SetMaxHealth(int health)
     {
         slider.maxValue = health;
@@ -19,5 +25,22 @@ public class HealthBar : MonoBehaviour
     {
         slider.value = health;
         fill.color = gradient.Evaluate(slider.normalizedValue);
+    }
+
+    public void hide()
+    {
+        hidden = true;
+        transform.gameObject.SetActive(false);
+    }
+
+    public void show()
+    {
+        hidden = false;
+        transform.gameObject.SetActive(true);
+    }
+
+    public bool isHidden()
+    {
+        return hidden;
     }
 }
