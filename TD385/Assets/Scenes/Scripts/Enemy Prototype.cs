@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,8 @@ public class EnemyPrototype : MonoBehaviour
     public float cooldown;
     private int initialSpeed;
     private GameObject weapon;
+    private SpawnManager spawnManager;
+    int lane;
 
     public int health;
     // Start is called before the first frame update
@@ -15,6 +18,8 @@ public class EnemyPrototype : MonoBehaviour
     {
         initialSpeed = speed;
         health = 100;
+
+        spawnManager = GameObject.FindAnyObjectByType<SpawnManager>(); ;
     }
 
     // Update is called once per frame
@@ -51,7 +56,13 @@ public class EnemyPrototype : MonoBehaviour
         {
             if (weapon != null)
                 Destroy(weapon);
+            spawnManager.enemyDestroyed(lane);
             Destroy(transform.gameObject);
         }
+    }
+
+    public void setLane(int lane)
+    {
+        this.lane = lane;
     }
 }

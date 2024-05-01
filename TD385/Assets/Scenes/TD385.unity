@@ -127,6 +127,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 708750132}
     m_Modifications:
+    - target: {fileID: 272053710843939386, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
+      propertyPath: lane
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 272053710843939386, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
+      propertyPath: spawnManager
+      value: 
+      objectReference: {fileID: 1770330137}
     - target: {fileID: 4471566252659673241, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
       propertyPath: m_Name
       value: Wall Tower (3)
@@ -137,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4482207828600862465, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 4482207828600862465, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
       propertyPath: m_LocalPosition.y
@@ -325,6 +333,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 708750132}
     m_Modifications:
+    - target: {fileID: 272053710843939386, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
+      propertyPath: lane
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 272053710843939386, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
+      propertyPath: spawnManager
+      value: 
+      objectReference: {fileID: 1770330137}
     - target: {fileID: 4471566252659673241, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
       propertyPath: m_Name
       value: Wall Tower (2)
@@ -335,7 +351,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4482207828600862465, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 4482207828600862465, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
       propertyPath: m_LocalPosition.y
@@ -395,6 +411,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 708750132}
     m_Modifications:
+    - target: {fileID: 272053710843939386, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
+      propertyPath: lane
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 272053710843939386, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
+      propertyPath: spawnManager
+      value: 
+      objectReference: {fileID: 1770330137}
     - target: {fileID: 4471566252659673241, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
       propertyPath: m_Name
       value: Wall Tower (1)
@@ -405,7 +429,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4482207828600862465, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 4482207828600862465, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
       propertyPath: m_LocalPosition.y
@@ -465,6 +489,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 708750132}
     m_Modifications:
+    - target: {fileID: 272053710843939386, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
+      propertyPath: spawnManager
+      value: 
+      objectReference: {fileID: 1770330137}
     - target: {fileID: 4471566252659673241, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
       propertyPath: m_Name
       value: Wall Tower
@@ -475,7 +503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4482207828600862465, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 4482207828600862465, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
       propertyPath: m_LocalPosition.y
@@ -654,7 +682,7 @@ Transform:
   m_GameObject: {fileID: 1379309881}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.87, y: 0, z: 0}
+  m_LocalPosition: {x: -7, y: 0, z: 0}
   m_LocalScale: {x: 0.3187, y: 0.3459, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -668,6 +696,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 708750132}
     m_Modifications:
+    - target: {fileID: 272053710843939386, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
+      propertyPath: lane
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 272053710843939386, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
+      propertyPath: spawnManager
+      value: 
+      objectReference: {fileID: 1770330137}
     - target: {fileID: 4471566252659673241, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
       propertyPath: m_Name
       value: Wall Tower (4)
@@ -678,7 +714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4482207828600862465, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 4482207828600862465, guid: 085031c4ed0611645a17a1706b9d9351, type: 3}
       propertyPath: m_LocalPosition.y
@@ -774,6 +810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a41c7ba48e7b7f4fae3718c42c1cbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numEnemies: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

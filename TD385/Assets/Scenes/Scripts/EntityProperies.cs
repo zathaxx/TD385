@@ -14,6 +14,9 @@ public class EntityProperies : MonoBehaviour
 
     public float healthBarTimer;
 
+    public SpawnManager spawnManager;
+    public int lane;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +36,10 @@ public class EntityProperies : MonoBehaviour
         }
         else
         {
-            shoot();
+            if (spawnManager.checkLane(lane))
+            {
+                shoot();
+            }
         }
 
         if (healthBarTimer > 0)
@@ -49,12 +55,10 @@ public class EntityProperies : MonoBehaviour
 
     private void shoot()
     {
-        if (cooldown <= 0)
-        {
-            cooldown = setCooldown;
-            GameObject bullet = Instantiate(Resources.Load("Prefabs/Bullet") as GameObject);
-            bullet.transform.position = transform.localPosition;
-        }
+        cooldown = setCooldown;
+        GameObject bullet = Instantiate(Resources.Load("Prefabs/Bullet") as GameObject);
+        bullet.transform.position = transform.localPosition;
+
     }
 
     /*public void TakeDamage(int damageDealt)
