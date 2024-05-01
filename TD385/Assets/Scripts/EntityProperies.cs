@@ -15,6 +15,9 @@ public class EntityProperies : MonoBehaviour
     public string ammunition;
     public bool Explodes;
 
+    public SpawnManager spawnManager;
+    public int lane;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,10 +34,13 @@ public class EntityProperies : MonoBehaviour
         {
             cooldown -= Time.deltaTime;
         }
-        else
-        {
-            shoot();
-        }
+        // else
+        // {
+        //     if (spawnManager.checkLane(lane))
+        //     {
+        //         shoot();
+        //     }
+        // }
 
         if (healthBarTimer > 0)
         {
