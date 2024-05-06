@@ -34,13 +34,13 @@ public class EntityProperies : MonoBehaviour
         {
             cooldown -= Time.deltaTime;
         }
-        // else
-        // {
-        //     if (spawnManager.checkLane(lane))
-        //     {
-        //         shoot();
-        //     }
-        // }
+         else
+         {
+             if (spawnManager.checkLane(lane))
+             {
+                 shoot();
+             }
+         }
 
         if (healthBarTimer > 0)
         {

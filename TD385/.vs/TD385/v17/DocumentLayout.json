@@ -3,27 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|c:\\users\\paul\\desktop\\uwbothell\\spring2024\\css385\\github\\td385\\td385\\assets\\scenes\\scripts\\towerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\towerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|c:\\users\\paul\\desktop\\uwbothell\\spring2024\\css385\\github\\td385\\td385\\assets\\scripts\\entityproperies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entityproperies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\assets\\scenes\\scripts\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|c:\\users\\paul\\desktop\\uwbothell\\spring2024\\css385\\github\\td385\\td385\\assets\\scripts\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\assets\\scenes\\scripts\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|c:\\users\\paul\\desktop\\uwbothell\\spring2024\\css385\\github\\td385\\td385\\assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\assets\\scenes\\scripts\\enemy prototype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\enemy prototype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|c:\\users\\paul\\desktop\\uwbothell\\spring2024\\css385\\github\\td385\\td385\\assets\\scripts\\enemy prototype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy prototype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\assets\\scenes\\scripts\\entityproperies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\entityproperies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|c:\\users\\paul\\desktop\\uwbothell\\spring2024\\css385\\github\\td385\\td385\\assets\\scripts\\towerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\towerbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Project 3\\Hero\\Assets\\Scripts\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|c:\\users\\paul\\desktop\\uwbothell\\spring2024\\css385\\github\\td385\\td385\\assets\\scripts\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,76 +39,80 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TowerBehaviour.cs",
-              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scenes\\Scripts\\TowerBehaviour.cs",
-              "RelativeDocumentMoniker": "Assets\\Scenes\\Scripts\\TowerBehaviour.cs",
-              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scenes\\Scripts\\TowerBehaviour.cs",
-              "RelativeToolTip": "Assets\\Scenes\\Scripts\\TowerBehaviour.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Title": "EntityProperies.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\EntityProperies.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EntityProperies.cs",
+              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\EntityProperies.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EntityProperies.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwA8AAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T17:50:41.531Z",
+              "WhenOpened": "2024-05-06T23:07:48.214Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UIController.cs",
-              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scenes\\Scripts\\UIController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scenes\\Scripts\\UIController.cs",
-              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scenes\\Scripts\\UIController.cs",
-              "RelativeToolTip": "Assets\\Scenes\\Scripts\\UIController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "SpawnManager.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\SpawnManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SpawnManager.cs",
+              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\SpawnManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SpawnManager.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAA8wDMAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T17:50:20.584Z"
+              "WhenOpened": "2024-05-06T22:59:14.683Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Enemy.cs",
-              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Project 3\\Hero\\Assets\\Scripts\\Enemy.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Project 3\\Hero\\Assets\\Scripts\\Enemy.cs",
-              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Project 3\\Hero\\Assets\\Scripts\\Enemy.cs",
-              "RelativeToolTip": "..\\..\\..\\Project 3\\Hero\\Assets\\Scripts\\Enemy.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAIAAAA",
+              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy.cs",
+              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAgwBYAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T17:31:57.024Z",
+              "WhenOpened": "2024-05-06T22:48:12.429Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Enemy Prototype.cs",
-              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scenes\\Scripts\\Enemy Prototype.cs",
-              "RelativeDocumentMoniker": "Assets\\Scenes\\Scripts\\Enemy Prototype.cs",
-              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scenes\\Scripts\\Enemy Prototype.cs",
-              "RelativeToolTip": "Assets\\Scenes\\Scripts\\Enemy Prototype.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAAuAAAA",
+              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\Enemy Prototype.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy Prototype.cs",
+              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\Enemy Prototype.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy Prototype.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T17:30:38.436Z"
+              "WhenOpened": "2024-05-06T22:47:04.768Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "EntityProperies.cs",
-              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scenes\\Scripts\\EntityProperies.cs",
-              "RelativeDocumentMoniker": "Assets\\Scenes\\Scripts\\EntityProperies.cs",
-              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scenes\\Scripts\\EntityProperies.cs",
-              "RelativeToolTip": "Assets\\Scenes\\Scripts\\EntityProperies.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAYwCkAAAANAAAA",
+              "Title": "TowerBehaviour.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\TowerBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TowerBehaviour.cs",
+              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\TowerBehaviour.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TowerBehaviour.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T19:08:12.325Z"
+              "WhenOpened": "2024-05-06T22:39:42.414Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SpawnManager.cs",
-              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scenes\\Scripts\\SpawnManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scenes\\Scripts\\SpawnManager.cs",
-              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scenes\\Scripts\\SpawnManager.cs",
-              "RelativeToolTip": "Assets\\Scenes\\Scripts\\SpawnManager.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwCwAAAA3AAAA",
+              "DocumentIndex": 5,
+              "Title": "UIController.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\UIController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UIController.cs",
+              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\UIController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UIController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAUwCEAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T19:02:06.144Z"
+              "WhenOpened": "2024-05-06T22:39:01.664Z",
+              "EditorCaption": ""
             }
           ]
         }

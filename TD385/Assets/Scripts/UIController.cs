@@ -28,4 +28,9 @@ public class UIController : MonoBehaviour
         transform.position = new Vector3(topLeft.x + (bound.size.x/2), topLeft.y - (bound.size.y/2), transform.position.z);
         textComponent.text = coins.ToString();
     }
+
+    public void increaseCoins(int amount)
+    {
+        coins += amount;
+    }
 }
