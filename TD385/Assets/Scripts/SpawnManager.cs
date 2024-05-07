@@ -48,10 +48,7 @@ public class SpawnManager : MonoBehaviour
             int enemyIndex = Random.Range(0, enemies.Length);
             GameObject enemy = Instantiate(enemies[enemyIndex]);
             int index = Random.Range(0, spawnY.Length);
-            Vector3 pos;
-            pos.x = spawnX;
-            pos.y = spawnY[index];
-            pos.z = 0;
+            Vector3 pos = new Vector3(spawnX, spawnY[index], 0);
             enemy.transform.position = pos;
             cooldown = setCooldown;
             numEnemies[index]++;
