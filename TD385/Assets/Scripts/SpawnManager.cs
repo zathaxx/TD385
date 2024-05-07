@@ -1,7 +1,5 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
@@ -10,7 +8,6 @@ public class SpawnManager : MonoBehaviour
     private int[] spawnY;
     private float cooldown;
     private float setCooldown;
-    public GameObject[] enemies;
 
     public int[] numEnemies;
 
@@ -33,8 +30,6 @@ public class SpawnManager : MonoBehaviour
         {
             numEnemies[i] = 0;
         }
-
-        enemies = Resources.LoadAll<GameObject>("Prefabs/Enemies");
     }
 
     // Update is called once per frame
@@ -46,10 +41,8 @@ public class SpawnManager : MonoBehaviour
         }
         else
         {
-            //GameObject enemy = Instantiate(Resources.Load("Prefabs/Enemy") as GameObject);
-            int index = UnityEngine.Random.Range(0, spawnY.Length);
-            int enemyIndex = UnityEngine.Random.Range(0, enemies.Length);
-            GameObject enemy = Instantiate(enemies[enemyIndex]);
+            GameObject enemy = Instantiate(Resources.Load("Prefabs/Enemy") as GameObject);
+            int index = Random.Range(0, spawnY.Length);
             Vector3 pos;
             pos.x = spawnX;
             pos.y = spawnY[index];

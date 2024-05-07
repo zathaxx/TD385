@@ -38,6 +38,12 @@ public class EnemyPrototype : MonoBehaviour
         // }
         transform.position -= speed * Time.smoothDeltaTime * transform.right;
     }
+
+    private void OnTriggerStay2D(Collider2D collision) {
+        if (collision.tag == "Tower") {
+            
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Tower")
