@@ -1,12 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Build;
 using UnityEngine;
 
 public class EnemyPrototype : MonoBehaviour
 {
     public int speed;
-    public float cooldown;
+    private float cooldown;
     private int initialSpeed;
     private GameObject weapon;
 
@@ -24,7 +25,8 @@ public class EnemyPrototype : MonoBehaviour
 
         health = 100;
 
-        spawnManager = GameObject.FindAnyObjectByType<SpawnManager>(); ;
+        spawnManager = GameObject.FindAnyObjectByType<SpawnManager>();
+        cooldown = 0f;
     }
 
     // Update is called once per frame
@@ -37,12 +39,6 @@ public class EnemyPrototype : MonoBehaviour
         //     }else stunned = false;
         // }
         transform.position -= speed * Time.smoothDeltaTime * transform.right;
-    }
-
-    private void OnTriggerStay2D(Collider2D collision) {
-        if (collision.tag == "Tower") {
-            
-        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -65,6 +61,7 @@ public class EnemyPrototype : MonoBehaviour
         {
             speed = initialSpeed;
             Destroy(weapon);
+            cooldown = 0f;
         }
     }
     public void takeDamage(int damage)

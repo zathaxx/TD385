@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EntityProperies : MonoBehaviour
+public class EntityProperties : MonoBehaviour
 {
     public int maxHealth;
     public int currentHealth;
@@ -21,17 +21,20 @@ public class EntityProperies : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        maxHealth = 100;
+        healthBar = transform.GetChild(0).GetComponent<HealthBar>();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         healthBar.hide();
         healthBarTimer = 0f;
-
         spawnManager = GameObject.FindAnyObjectByType<SpawnManager>();
+        ammunition = "cannon_ball";
+        setCooldown = 3f;
     }
 
     // Update is called once per frame
     void Update()
-    {
+    {   
         if (cooldown >= 0)
         {
             cooldown -= Time.deltaTime;
@@ -74,7 +77,7 @@ public class EntityProperies : MonoBehaviour
     {
         
     }*/
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.tag == "Weapon" && transform.tag == "Tower")
         {
@@ -83,8 +86,6 @@ public class EntityProperies : MonoBehaviour
                 healthBar.show();
             }
             healthBarTimer = 3;
-            currentHealth -= 10;
-            healthBar.SetHealth(currentHealth);
             if(currentHealth <= 0)
             {
                 Destroy(collision.gameObject);
