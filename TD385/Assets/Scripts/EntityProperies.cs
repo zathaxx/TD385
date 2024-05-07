@@ -15,8 +15,8 @@ public class EntityProperies : MonoBehaviour
     public string ammunition;
     public bool Explodes;
 
-    public SpawnManager spawnManager;
-    public int lane;
+    private SpawnManager spawnManager;
+    private int lane;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +25,8 @@ public class EntityProperies : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
         healthBar.hide();
         healthBarTimer = 0f;
+
+        spawnManager = GameObject.FindAnyObjectByType<SpawnManager>();
     }
 
     // Update is called once per frame
@@ -89,6 +91,11 @@ public class EntityProperies : MonoBehaviour
                 Destroy(transform.gameObject);
             }
         }
+    }
+
+    public void setLane(int lane)
+    {
+        this.lane = lane;
     }
 
   

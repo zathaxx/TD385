@@ -5,22 +5,24 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     private int spawnX;
-    private int[] spawnY;
+    private float[] spawnY;
     private float cooldown;
     private float setCooldown;
 
     public int[] numEnemies;
 
+    GameObject[] enemies;
+
     // Start is called before the first frame update
     void Start()
     {
-        spawnX = 15;
-        spawnY = new int[5];
-        int y = 4;
+        spawnX = 70;
+        spawnY = new float[5];
+        float y = 3;
         for (int i = 0; i < spawnY.Length; i++)
         {
             spawnY[i] = y;
-            y -= 2;
+            y -= 7.5f;
         }
         cooldown = 3;
         setCooldown = 2;
@@ -30,6 +32,8 @@ public class SpawnManager : MonoBehaviour
         {
             numEnemies[i] = 0;
         }
+
+        enemies = Resources.LoadAll<GameObject>("Prefabs/Enemies");
     }
 
     // Update is called once per frame
@@ -41,7 +45,8 @@ public class SpawnManager : MonoBehaviour
         }
         else
         {
-            GameObject enemy = Instantiate(Resources.Load("Prefabs/Enemy") as GameObject);
+            int enemyIndex = Random.Range(0, enemies.Length);
+            GameObject enemy = Instantiate(enemies[enemyIndex]);
             int index = Random.Range(0, spawnY.Length);
             Vector3 pos;
             pos.x = spawnX;
