@@ -53,7 +53,7 @@ public class TowerBehaviour : MonoBehaviour
             if (tile != null && canPlace && uIController.coins - towerCost >= 0) {
                 GameObject e = Instantiate(Resources.Load("Prefabs/" + gameObject.name + "Variant") as GameObject);
                 e.transform.localScale = transform.localScale;
-                e.transform.position = new Vector3(world_cell.x +3f, world_cell.y + 3f, e.transform.position.z);
+                e.transform.position = new Vector3(world_cell.x +4f, world_cell.y + 4f, e.transform.position.z);
                 uIController.coins -= towerCost;
             } 
             transform.position = original_position;
