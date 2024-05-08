@@ -18,11 +18,11 @@ public class SpawnManager : MonoBehaviour
     {
         spawnX = 70;
         spawnY = new float[5];
-        float y = 3;
+        float y = 4;
         for (int i = 0; i < spawnY.Length; i++)
         {
             spawnY[i] = y;
-            y -= 7.5f;
+            y -= 8;
         }
         cooldown = 3;
         setCooldown = 2;
@@ -48,10 +48,7 @@ public class SpawnManager : MonoBehaviour
             int enemyIndex = Random.Range(0, enemies.Length);
             GameObject enemy = Instantiate(enemies[enemyIndex]);
             int index = Random.Range(0, spawnY.Length);
-            Vector3 pos;
-            pos.x = spawnX;
-            pos.y = spawnY[index];
-            pos.z = 0;
+            Vector3 pos = new Vector3(spawnX, spawnY[index], 0);
             enemy.transform.position = pos;
             cooldown = setCooldown;
             numEnemies[index]++;
