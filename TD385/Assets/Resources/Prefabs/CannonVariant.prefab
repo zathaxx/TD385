@@ -454,7 +454,7 @@ MonoBehaviour:
   isTall: 0
   healthBar: {fileID: 6864594028684391704}
   offset: {x: 2, y: 0.7, z: 0}
-  setCooldown: 1
+  setCooldown: 3
   healthBarTimer: 0
   ammunition: cannon_ball
   Explodes: 0

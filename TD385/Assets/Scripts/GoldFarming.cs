@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GoldFarming : MonoBehaviour
 {
-    private int miningRate = 20;
+    public int miningRate = 20;
     private float cooldown = 1f;
     private float time = 0f;
     UIController ui;

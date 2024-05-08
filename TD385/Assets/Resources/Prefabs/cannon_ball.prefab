@@ -177,4 +177,5 @@ MonoBehaviour:
   speed: 100
   target: {x: 0, y: 0, z: 0}
   damage: 100
-  armorPierce: 0
+  stun: 0
+  explosionSize: {x: 0.75, y: 0.75}

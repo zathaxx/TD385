@@ -27,7 +27,6 @@ public class EntityProperties : MonoBehaviour
         healthBar.hide();
         healthBarTimer = 0f;
         spawnManager = GameObject.FindAnyObjectByType<SpawnManager>();
-        setCooldown = 3f;
     }
 
     // Update is called once per frame
@@ -58,12 +57,13 @@ public class EntityProperties : MonoBehaviour
 
     private void shoot()
     {
-        if (cooldown <= 0)
-        {
+
             cooldown = setCooldown;
+            // GameObject muzzleFlash = Instantiate(Resources.Load("Prefabs/ef_3") as GameObject);
+            // muzzleFlash.transform.position = transform.position + offset;
+            // Destroy(muzzleFlash, 0.3f);
             GameObject bullet = Instantiate(Resources.Load("Prefabs/"+ ammunition) as GameObject);
             bullet.transform.position = transform.position + offset;
-        }
     }
     private void Explode()
     {

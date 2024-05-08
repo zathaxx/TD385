@@ -10,6 +10,8 @@ public class BulletBehaviour : MonoBehaviour
     public int damage = 25;
     public bool stun;
     private float boundary = 70;
+    private float time = 0f;
+    public Vector2 explosionSize;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,11 +22,11 @@ public class BulletBehaviour : MonoBehaviour
     void Update()
     {
         transform.position += transform.right * speed * Time.smoothDeltaTime; 
-
-        if (transform.position.x > boundary)
+        if (transform.position.x > boundary || time > 3f)
         {
             Destroy(transform.gameObject);
         }
+        time += Time.deltaTime;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -35,6 +37,7 @@ public class BulletBehaviour : MonoBehaviour
             enemy.takeDamage(damage);
             GameObject explosion = Instantiate(Resources.Load("Prefabs/Explosion") as GameObject);
             explosion.transform.position = transform.position;
+            explosion.transform.localScale = explosionSize;
             Destroy(explosion, 1.1f);
             if(stun){
                 enemy.Stun();
