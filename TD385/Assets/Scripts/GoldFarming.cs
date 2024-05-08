@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GoldFarming : MonoBehaviour
 {
-    private int miningRate;
-    private float cooldown = 10f;
+    private int miningRate = 20;
+    private float cooldown = 1f;
     private float time = 0f;
     UIController ui;
     // Start is called before the first frame update
@@ -15,11 +15,12 @@ public class GoldFarming : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(time > cooldown){
             ui.AddCoins(miningRate);
+            time = 0;
         }
-        time =+ Time.deltaTime;
+        time += Time.deltaTime;
     }
 }

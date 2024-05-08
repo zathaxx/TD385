@@ -23,7 +23,6 @@ public class EnemyPrototype : MonoBehaviour
         initialSpeed = speed;
 
 
-        health = 100;
 
         spawnManager = GameObject.FindAnyObjectByType<SpawnManager>();
         cooldown = 0f;

@@ -21,7 +21,6 @@ public class EntityProperties : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        maxHealth = 100;
         healthBar = transform.GetChild(0).GetComponent<HealthBar>();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
@@ -77,6 +76,7 @@ public class EntityProperties : MonoBehaviour
     {
         
     }*/
+    
     private void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.tag == "Weapon" && transform.tag == "Tower")
@@ -90,7 +90,14 @@ public class EntityProperties : MonoBehaviour
             {
                 Destroy(collision.gameObject);
                 Destroy(transform.gameObject);
+                if(Explodes) Explode();
             }
+        }
+    }
+    
+    private void OnTriggerExit2D(Collider2D collision){
+        if(collision.tag == "Enemy" && Explodes){
+            Destroy(collision.gameObject);
         }
     }
 
