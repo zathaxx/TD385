@@ -16,7 +16,7 @@ public class EntityProperties : MonoBehaviour
     public bool Explodes;
 
     private SpawnManager spawnManager;
-    private int lane;
+    public int lane;
 
     // Start is called before the first frame update
     void Start()

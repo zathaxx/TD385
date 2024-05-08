@@ -11,7 +11,11 @@ public class SpawnManager : MonoBehaviour
 
     public int[] numEnemies;
 
-    GameObject[] enemies;
+    private GameObject[] enemies;
+
+    public float setDifficultyCooldown;
+    private float difficultyCooldown;
+    private int difficulty;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +38,10 @@ public class SpawnManager : MonoBehaviour
         }
 
         enemies = Resources.LoadAll<GameObject>("Prefabs/Enemies");
+
+        setDifficultyCooldown = 10;
+        difficultyCooldown = cooldown + setDifficultyCooldown;
+        difficulty = 1;
     }
 
     // Update is called once per frame
@@ -45,16 +53,29 @@ public class SpawnManager : MonoBehaviour
         }
         else
         {
-            int enemyIndex = Random.Range(0, enemies.Length);
-            GameObject enemy = Instantiate(enemies[enemyIndex]);
-            int index = Random.Range(0, spawnY.Length);
-            Vector3 pos = new Vector3(spawnX, spawnY[index], 0);
-            enemy.transform.position = pos;
-            cooldown = setCooldown;
-            numEnemies[index]++;
+            for (int i = 0; i < difficulty; i++ )
+            {
+                int enemyIndex = Random.Range(0, enemies.Length);
+                GameObject enemy = Instantiate(enemies[enemyIndex]);
+                int index = Random.Range(0, spawnY.Length);
+                Vector3 pos = new Vector3(spawnX, spawnY[index], 0);
+                enemy.transform.position = pos;
+                cooldown = setCooldown;
+                numEnemies[index]++;
 
-            EnemyPrototype ep = enemy.GetComponent<EnemyPrototype>();
-            ep.setLane(index);
+                EnemyPrototype ep = enemy.GetComponent<EnemyPrototype>();
+                ep.setLane(index);
+            }
+        }
+
+        if (difficultyCooldown > 0)
+        {
+            difficultyCooldown -= Time.deltaTime;
+        }
+        else
+        {
+            difficultyCooldown = setDifficultyCooldown;
+            difficulty++;
         }
     }
 

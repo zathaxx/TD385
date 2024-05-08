@@ -54,6 +54,20 @@ public class TowerBehaviour : MonoBehaviour
                 GameObject e = Instantiate(Resources.Load("Prefabs/" + gameObject.name + "Variant") as GameObject);
                 e.transform.localScale = transform.localScale;
                 e.transform.position = new Vector3(world_cell.x +4f, world_cell.y + 4f, e.transform.position.z);
+                EntityProperties tower = e.GetComponent<EntityProperties>();
+                float y = 4;
+                for (int i = 0; i < 5; i++)
+                {
+                    if (e.transform.position.y == y)
+                    {
+                        tower.setLane(i);
+                        break;
+                    }
+                    else
+                    {
+                        y -= 8;
+                    }
+                }
                 uIController.coins -= towerCost;
             } 
             transform.position = original_position;
