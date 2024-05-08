@@ -6,11 +6,11 @@ public class WeaponBehavior : MonoBehaviour
 {
     public float rotateSpeed = 90.0f;
 
-    private float cooldown;
+    //private float cooldown;
     // Start is called before the first frame update
     void Start()
     {
-        cooldown = 0f;
+        //cooldown = 0f;
     }
 
     // Update is called once per frame
@@ -24,7 +24,7 @@ public class WeaponBehavior : MonoBehaviour
             // if (cooldown <= 0f) {
                 EntityProperties tower = collision.GetComponent<EntityProperties>();
                 tower.currentHealth -= 10;
-                cooldown = 1f;
+                //cooldown = 1f;
                 tower.healthBar.SetHealth(tower.currentHealth);
             // } else {
             //     cooldown -= Time.deltaTime;

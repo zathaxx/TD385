@@ -1,22 +1,23 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Build;
 using UnityEngine;
 
 public class EnemyPrototype : MonoBehaviour
 {
     public int speed;
-    private float cooldown;
+    //private float cooldown;
     private int initialSpeed;
     private GameObject weapon;
 
-    private bool stunned = false;
+    //private bool stunned = false;
 
     private SpawnManager spawnManager;
-    int lane;
+    private int lane;
 
     public int health = 100;
+
+    private bool dead;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,9 @@ public class EnemyPrototype : MonoBehaviour
 
 
         spawnManager = GameObject.FindAnyObjectByType<SpawnManager>();
-        cooldown = 0f;
+        //cooldown = 0f;
+
+        dead = false;
     }
 
     // Update is called once per frame
@@ -60,7 +63,7 @@ public class EnemyPrototype : MonoBehaviour
         {
             speed = initialSpeed;
             Destroy(weapon);
-            cooldown = 0f;
+            //cooldown = 0f;
         }
     }
     public void takeDamage(int damage)
@@ -70,7 +73,9 @@ public class EnemyPrototype : MonoBehaviour
         {
             if (weapon != null)
                 Destroy(weapon);
-            //spawnManager.enemyDestroyed(lane);
+            if (!dead)
+                spawnManager.enemyDestroyed(lane);
+            dead = true;
             Destroy(transform.gameObject);
         }
     }
@@ -78,7 +83,7 @@ public class EnemyPrototype : MonoBehaviour
     public void Stun()
     {
         speed = 1;
-        stunned = true;
+        //stunned = true;
 
     }
     public void setLane(int lane)

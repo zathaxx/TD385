@@ -39,7 +39,7 @@ public class SpawnManager : MonoBehaviour
 
         enemies = Resources.LoadAll<GameObject>("Prefabs/Enemies");
 
-        setDifficultyCooldown = 10;
+        setDifficultyCooldown = 7.5f;
         difficultyCooldown = cooldown + setDifficultyCooldown;
         difficulty = 1;
     }
@@ -61,10 +61,11 @@ public class SpawnManager : MonoBehaviour
                 Vector3 pos = new Vector3(spawnX, spawnY[index], 0);
                 enemy.transform.position = pos;
                 cooldown = setCooldown;
-                numEnemies[index]++;
-
                 EnemyPrototype ep = enemy.GetComponent<EnemyPrototype>();
                 ep.setLane(index);
+                numEnemies[index]++;
+
+                
             }
         }
 
