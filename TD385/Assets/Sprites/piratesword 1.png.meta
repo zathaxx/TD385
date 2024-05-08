@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 64657408b211b924696e91000a1adc2c
+guid: 747761539f505974087be5fc9a1f8f4a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3222795441172970563
-    second: piratesword_0
+      213: 4239987036815455907
+    second: piratesword 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,22 +113,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: piratesword_0
+      name: piratesword 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1280
-        height: 1036
+        y: 6
+        width: 464
+        height: 1501
       alignment: 9
-      pivot: {x: 0.21580799, y: 0.25963235}
+      pivot: {x: 0.4306598, y: 0.17371187}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 34cfcdee06ba9bc20800000000000000
-      internalID: 3222795441172970563
+      spriteID: 3a675addeb577da30800000000000000
+      internalID: 4239987036815455907
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: dc30aaa4ed0c9ee409fe3de4b1a3a3b9
+    spriteID: 8ec30e62cd89a2c419f0a0a4cfbd19d0
     internalID: 0
     vertices: []
     indices: 
@@ -144,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      piratesword_0: 3222795441172970563
+      piratesword 1_0: 4239987036815455907
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
