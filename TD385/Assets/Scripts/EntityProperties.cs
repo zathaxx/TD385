@@ -38,7 +38,7 @@ public class EntityProperties : MonoBehaviour
         }
         else
          {
-             if (spawnManager.checkLane(lane))
+             if (spawnManager.checkLane(lane) && ammunition != "")
              {
                  shoot();
              }

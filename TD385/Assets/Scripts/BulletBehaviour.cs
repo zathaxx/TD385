@@ -40,7 +40,9 @@ public class BulletBehaviour : MonoBehaviour
             GameObject explosion = Instantiate(Resources.Load("Prefabs/Explosion") as GameObject);
             explosion.transform.position = transform.position;
             explosion.transform.localScale = explosionSize;
-            audio.Play();
+            if (audio != null) {
+                audio.Play();
+            }
             Destroy(explosion, 1.1f);
             if(stun){
                 enemy.Stun();
