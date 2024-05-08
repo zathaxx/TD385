@@ -12,6 +12,8 @@ public class BulletBehaviour : MonoBehaviour
     private float boundary = 70;
     private float time = 0f;
     public Vector2 explosionSize;
+
+    public AudioSource audio;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +40,7 @@ public class BulletBehaviour : MonoBehaviour
             GameObject explosion = Instantiate(Resources.Load("Prefabs/Explosion") as GameObject);
             explosion.transform.position = transform.position;
             explosion.transform.localScale = explosionSize;
+            audio.Play();
             Destroy(explosion, 1.1f);
             if(stun){
                 enemy.Stun();
