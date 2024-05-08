@@ -19,7 +19,7 @@ public class BulletBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += transform.right * speed * Time.deltaTime; 
+        transform.position += transform.right * speed * Time.smoothDeltaTime; 
 
         if (transform.position.x > boundary)
         {
