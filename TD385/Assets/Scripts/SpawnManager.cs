@@ -18,11 +18,11 @@ public class SpawnManager : MonoBehaviour
     {
         spawnX = 70;
         spawnY = new float[5];
-        float y = 3;
+        float y = 4;
         for (int i = 0; i < spawnY.Length; i++)
         {
             spawnY[i] = y;
-            y -= 7.5f;
+            y -= 8;
         }
         cooldown = 3;
         setCooldown = 2;
