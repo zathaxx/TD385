@@ -69,8 +69,9 @@ public class EntityProperties : MonoBehaviour
     }
     private void Explode()
     {
-        GameObject bullet = Instantiate(Resources.Load("Prefabs/"+ ammunition) as GameObject);
-        bullet.transform.position = transform.position + offset;
+        GameObject explosion = Instantiate(Resources.Load("Prefabs/Explosion") as GameObject);
+        explosion.transform.position = transform.position;
+        Destroy(explosion, 1.1f);
     }
 
     /*public void TakeDamage(int damageDealt)

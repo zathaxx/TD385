@@ -9,7 +9,7 @@ public class BulletBehaviour : MonoBehaviour
     public Vector3 target;
     public int damage = 25;
     public bool stun;
-    private float boundary = 15;
+    private float boundary = 70;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +33,9 @@ public class BulletBehaviour : MonoBehaviour
         {
             EnemyPrototype enemy = collision.GetComponent<EnemyPrototype>();
             enemy.takeDamage(damage);
+            GameObject explosion = Instantiate(Resources.Load("Prefabs/Explosion") as GameObject);
+            explosion.transform.position = transform.position;
+            Destroy(explosion, 1.1f);
             if(stun){
                 enemy.Stun();
             }
