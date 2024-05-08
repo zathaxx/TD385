@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Weapon
   - Gold
+  - Bullet
+  - UITower
   layers:
   - Default
   - TransparentFX

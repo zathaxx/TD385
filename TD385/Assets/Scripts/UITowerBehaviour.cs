@@ -61,20 +61,14 @@ public class TowerBehaviour : MonoBehaviour
     }
 
     void OnTriggerStay2D(Collider2D other) {
-        if (other.tag == "Tower") {
-            TowerBehaviour tower = other.GetComponent<TowerBehaviour>();
-            if (tower.IsUITower()) {
-                tower.canPlace = false;
-            }
+        if (other.tag == "Tower" || other.tag == "Enemy") {
+            canPlace = false;
         }
     }
 
     void OnTriggerExit2D(Collider2D other) {
-        if (other.tag == "Tower") {
-            TowerBehaviour tower = other.GetComponent<TowerBehaviour>();
-            if (tower.IsUITower()) {
-                tower.canPlace = true;
-            }
+        if (other.tag == "Tower"|| other.tag == "Enemy") {
+            canPlace = true;
         }
     }
 
