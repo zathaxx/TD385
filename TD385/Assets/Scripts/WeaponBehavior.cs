@@ -19,16 +19,16 @@ public class WeaponBehavior : MonoBehaviour
         transform.Rotate(transform.forward, rotateSpeed * Time.smoothDeltaTime);
     }
 
-    private void OnTriggerStay2D(Collider2D collision) {
+    private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.tag == "Tower") {
-            if (cooldown <= 0f) {
+            // if (cooldown <= 0f) {
                 EntityProperties tower = collision.GetComponent<EntityProperties>();
                 tower.currentHealth -= 10;
                 cooldown = 1f;
                 tower.healthBar.SetHealth(tower.currentHealth);
-            } else {
-                cooldown -= Time.deltaTime;
-            }
+            // } else {
+            //     cooldown -= Time.deltaTime;
+            // }
         }
     }
 }

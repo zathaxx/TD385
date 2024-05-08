@@ -47,7 +47,7 @@ public class EnemyPrototype : MonoBehaviour
             speed = 0;
             Vector3 pos = transform.position;
             weapon = Instantiate(Resources.Load("Prefabs/Weapon") as GameObject);
-            weapon.transform.position = new Vector3(pos.x - 0.75f, pos.y - .1f, pos.z);
+            weapon.transform.position = new Vector3(pos.x - 0.8f, pos.y - .1f, pos.z);
         
         }
         if(collision.tag == "Gold")

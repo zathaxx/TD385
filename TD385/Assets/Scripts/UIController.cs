@@ -40,4 +40,8 @@ public class UIController : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+    public void AddCoins(int coins)
+    {
+        this.coins += coins;
+    }
 }

@@ -28,7 +28,6 @@ public class EntityProperties : MonoBehaviour
         healthBar.hide();
         healthBarTimer = 0f;
         spawnManager = GameObject.FindAnyObjectByType<SpawnManager>();
-        ammunition = "cannon_ball";
         setCooldown = 3f;
     }
 
