@@ -2,58 +2,81 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering;
 using UnityEngine.Tilemaps;
 
-public class TowerBehaviour : MonoBehaviour
+public class UITowerBehaviour : MonoBehaviour
 {
     // Start is called before the first frame update
-    private bool UITower;
     private Vector3 original_position;
-    private bool dragging;
+    private bool moving;
     private UIController uIController;
     public int towerCost;
     private Tilemap tiles;
     public bool canPlace;
+    GameObject shadow;
     void Start()
     {
-        if (transform.parent == GameObject.Find("UI").transform) {
-            UITower = true;
-            canPlace = true;
-        } else {
-            UITower = false;
-        }
-        original_position = transform.position;
-        dragging = false;
+        canPlace = true;
         uIController = GameObject.Find("UI").GetComponent<UIController>();
+        original_position = transform.localPosition;
+        moving = false;
         tiles = GameObject.Find("Tilemap").GetComponent<Tilemap>();
+
+
+        CreateShadow();
+    }
+
+
+    void CreateShadow() {
+        shadow = new GameObject();
+        shadow.gameObject.name = gameObject.name + "Shadow";
+        shadow.transform.parent = transform;
+        shadow.AddComponent<SpriteRenderer>().sprite = GetComponent<SpriteRenderer>().sprite;
+        Color c = shadow.GetComponent<SpriteRenderer>().color;
+        shadow.GetComponent<SpriteRenderer>().color = new Color (c.r, c.g, c.b, 0.5f);
+        shadow.transform.localScale = new Vector3(1f, 1f, 1f);
+        shadow.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (dragging) {
+        if (moving)
+        {
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
-        }
-    }
 
-    void OnMouseDown() {
-        if (UITower) {
-            original_position = transform.position;
-            dragging = true;
-        }
-    }
-
-    void OnMouseUp() {
-        if (UITower) {
-            dragging = false;
             Vector3Int cell = tiles.WorldToCell(transform.position);
             Vector3 world_cell = tiles.CellToWorld(cell);
             TileBase tile = tiles.GetTile(cell);
-            if (tile != null && canPlace && uIController.coins - towerCost >= 0) {
+
+            canPlace = validPlacement(world_cell);
+
+            if (tile != null && canPlace)
+            {
+                shadow.SetActive(true);
+                shadow.transform.position = new Vector3(world_cell.x + 4f, world_cell.y + 4f, shadow.transform.position.z);
+            } else {
+                shadow.SetActive(false);
+            }
+        }
+    }
+
+
+
+    void OnMouseUp()
+    {
+        if (moving) {
+            moving = false;
+            Vector3Int cell = tiles.WorldToCell(transform.position);
+            Vector3 world_cell = tiles.CellToWorld(cell);
+            TileBase tile = tiles.GetTile(cell);
+            if (tile != null && canPlace && uIController.coins - towerCost >= 0)
+            {
                 GameObject e = Instantiate(Resources.Load("Prefabs/" + gameObject.name + "Variant") as GameObject);
                 e.transform.localScale = transform.localScale;
-                e.transform.position = new Vector3(world_cell.x +4f, world_cell.y + 4f, e.transform.position.z);
+                e.transform.position = new Vector3(world_cell.x + 4f, world_cell.y + 4f, e.transform.position.z);
                 EntityProperties tower = e.GetComponent<EntityProperties>();
                 float y = 4;
                 for (int i = 0; i < 5; i++)
@@ -69,24 +92,28 @@ public class TowerBehaviour : MonoBehaviour
                     }
                 }
                 uIController.coins -= towerCost;
-            } 
-            transform.position = original_position;
+            }
+            transform.localPosition = original_position;
+            shadow.SetActive(false);
+        } else {
+            moving = true;
         }
     }
 
-    void OnTriggerStay2D(Collider2D other) {
-        if (other.tag == "Tower" || other.tag == "Enemy") {
-            canPlace = false;
-        }
+    void OnMouseOver() {
+        Debug.Log("Hovering Over " + gameObject.name);
     }
 
-    void OnTriggerExit2D(Collider2D other) {
-        if (other.tag == "Tower"|| other.tag == "Enemy") {
-            canPlace = true;
+    private bool validPlacement(Vector3 world_cell) {
+        Vector3 newPos = new Vector3(world_cell.x + 4f, world_cell.y + 4f, shadow.transform.position.z);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(newPos, 0.1f);
+        foreach (Collider2D col in colliders) {
+            if (col.tag == "Tower") {
+                return false;
+            }
         }
+        return true;
     }
 
-    public bool IsUITower() {
-        return UITower;
-    }
+
 }

@@ -96,7 +96,7 @@ public class EntityProperties : MonoBehaviour
     }
     
     private void OnTriggerExit2D(Collider2D collision){
-        if(collision.tag == "Enemy" && Explodes){
+        if(collision.tag == "Enemy" && Explodes && currentHealth <= 0){
             Destroy(collision.gameObject);
         }
     }
@@ -105,6 +105,4 @@ public class EntityProperties : MonoBehaviour
     {
         this.lane = lane;
     }
-
-  
 }

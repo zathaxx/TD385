@@ -46,12 +46,19 @@ public class EnemyPrototype : MonoBehaviour
     {
         if(collision.tag == "Tower")
         {
-            speed = 0;
-            Vector3 pos = transform.position;
-            weapon = Instantiate(Resources.Load("Prefabs/Weapon") as GameObject);
-            weapon.transform.position = new Vector3(pos.x - 0.8f, pos.y - .1f, pos.z);
-        
+            EntityProperties e = collision.GetComponent<EntityProperties>();
+            BoxCollider2D tower = collision.GetComponent<BoxCollider2D>();
+            float towerRight = e.transform.position.x + (tower.bounds.size.x/2);
+            BoxCollider2D enemy = GetComponent<BoxCollider2D>();
+            float enemyLeft = transform.position.x - (enemy.bounds.size.x/2);
+            if (towerRight - 0.5f < enemyLeft) {
+                speed = 0;
+                Vector3 pos = transform.position;
+                weapon = Instantiate(Resources.Load("Prefabs/Weapon") as GameObject);
+                weapon.transform.position = new Vector3(pos.x - 0.8f, pos.y - .1f, pos.z);
+            }
         }
+        
         if(collision.tag == "Gold")
         {
             Destroy(collision.gameObject);
