@@ -10,6 +10,7 @@ TagManager:
   - Gold
   - Bullet
   - UITower
+  - Shadow
   layers:
   - Default
   - TransparentFX
