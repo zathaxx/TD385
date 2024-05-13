@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering;
 using UnityEngine.Tilemaps;
+using TMPro;
 
 public class UITowerBehaviour : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class UITowerBehaviour : MonoBehaviour
     private Tilemap tiles;
     public bool canPlace;
     GameObject shadow;
+    private GameObject information;
+
     void Start()
     {
         canPlace = true;
@@ -22,8 +25,7 @@ public class UITowerBehaviour : MonoBehaviour
         original_position = transform.localPosition;
         moving = false;
         tiles = GameObject.Find("Tilemap").GetComponent<Tilemap>();
-
-
+        information = GameObject.Find("Information");
         CreateShadow();
     }
 
@@ -101,7 +103,15 @@ public class UITowerBehaviour : MonoBehaviour
     }
 
     void OnMouseOver() {
-        Debug.Log("Hovering Over " + gameObject.name);
+        if (transform.localPosition == original_position) {
+            uIController.UpdateInfoUI(gameObject);
+        } else {
+            information.SetActive(false);
+        }
+    }
+
+    void OnMouseExit() {
+        information.SetActive(false);
     }
 
     private bool validPlacement(Vector3 world_cell) {
