@@ -15,6 +15,7 @@ public class UIController : MonoBehaviour
 
     private GameObject information;
     private GameObject InfoSprite;
+    private GameObject UpgradeInfo;
     void Start()
     {
         Vector3 topLeft = Camera.main.ViewportToWorldPoint(new Vector3(0f, 1f, 1f));
@@ -27,6 +28,8 @@ public class UIController : MonoBehaviour
         InfoSprite = GameObject.Find("InfoSprite");
         information.transform.position = new Vector3(transform.position.x + bound.size.x, transform.position.y, transform.position.z);
         information.SetActive(false);
+        UpgradeInfo = GameObject.Find("UpgradeInfo");
+        UpgradeInfo.SetActive(false);
     }
 
     // Update is called once per frame
