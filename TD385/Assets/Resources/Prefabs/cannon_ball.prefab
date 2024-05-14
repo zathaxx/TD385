@@ -177,9 +177,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 100
   target: {x: 0, y: 0, z: 0}
-  damage: 100
-  stun: 0
+  damage: 250
+  stun: 1
   explosionSize: {x: 0.75, y: 0.75}
+  duration: 3
+  audio: {fileID: 0}
 --- !u!82 &-6940294970769745214
 AudioSource:
   m_ObjectHideFlags: 0

@@ -169,6 +169,8 @@ MonoBehaviour:
   damage: 75
   stun: 0
   explosionSize: {x: 0.2, y: 0.2}
+  duration: 1
+  audio: {fileID: 0}
 --- !u!1 &2352075123932872680
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,6 +340,8 @@ MonoBehaviour:
   damage: 75
   stun: 0
   explosionSize: {x: 0.2, y: 0.2}
+  duration: 1
+  audio: {fileID: 0}
 --- !u!1 &2717614568800539243
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,6 +396,8 @@ MonoBehaviour:
   damage: 0
   stun: 0
   explosionSize: {x: 0, y: 0}
+  duration: 1
+  audio: {fileID: 0}
 --- !u!1 &3258022638140916991
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,6 +567,8 @@ MonoBehaviour:
   damage: 75
   stun: 0
   explosionSize: {x: 0.2, y: 0.2}
+  duration: 1
+  audio: {fileID: 0}
 --- !u!1 &4370693204668531742
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,6 +738,8 @@ MonoBehaviour:
   damage: 75
   stun: 0
   explosionSize: {x: 0.2, y: 0.2}
+  duration: 1
+  audio: {fileID: 0}
 --- !u!1 &8876423724261246047
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,3 +909,5 @@ MonoBehaviour:
   damage: 75
   stun: 0
   explosionSize: {x: 0.2, y: 0.2}
+  duration: 1
+  audio: {fileID: 0}

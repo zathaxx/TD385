@@ -12,6 +12,7 @@ public class BulletBehaviour : MonoBehaviour
     private float boundary = 70;
     private float time = 0f;
     public Vector2 explosionSize;
+    public float duration;
 
     public AudioSource audio;
     // Start is called before the first frame update
@@ -24,7 +25,7 @@ public class BulletBehaviour : MonoBehaviour
     void Update()
     {
         transform.position += transform.right * speed * Time.smoothDeltaTime; 
-        if (transform.position.x > boundary || time > 3f)
+        if (transform.position.x > boundary || time > duration)
         {
             Destroy(transform.gameObject);
         }
