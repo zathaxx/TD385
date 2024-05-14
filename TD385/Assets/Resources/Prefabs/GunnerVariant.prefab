@@ -422,15 +422,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec9b5729b95fff49a27f6d38e57c77d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 100
+  maxHealth: 50
+  currentHealth: 50
   isTall: 0
   healthBar: {fileID: 8928214497609711669}
   offset: {x: 2.15, y: -0.095, z: 0}
-  setCooldown: 1
+  setCooldown: 1.5
   healthBarTimer: 0
   ammunition: buckshot
   Explodes: 0
+  lane: 0
 --- !u!50 &3160818954648846025
 Rigidbody2D:
   serializedVersion: 4

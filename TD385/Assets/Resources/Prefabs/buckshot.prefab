@@ -166,7 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   target: {x: 0, y: 0, z: 0}
-  damage: 75
+  damage: 50
   stun: 0
   explosionSize: {x: 0.2, y: 0.2}
   duration: 1
@@ -337,7 +337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   target: {x: 0, y: 0, z: 0}
-  damage: 75
+  damage: 50
   stun: 0
   explosionSize: {x: 0.2, y: 0.2}
   duration: 1
@@ -564,7 +564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   target: {x: 0, y: 0, z: 0}
-  damage: 75
+  damage: 50
   stun: 0
   explosionSize: {x: 0.2, y: 0.2}
   duration: 1
@@ -735,7 +735,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   target: {x: 0, y: 0, z: 0}
-  damage: 75
+  damage: 50
   stun: 0
   explosionSize: {x: 0.2, y: 0.2}
   duration: 1
@@ -906,7 +906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   target: {x: 0, y: 0, z: 0}
-  damage: 75
+  damage: 50
   stun: 0
   explosionSize: {x: 0.2, y: 0.2}
   duration: 1
