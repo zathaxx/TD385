@@ -11,6 +11,8 @@ TagManager:
   - Bullet
   - UITower
   - Shadow
+  - UIWrench
+  - Dynamite
   layers:
   - Default
   - TransparentFX
