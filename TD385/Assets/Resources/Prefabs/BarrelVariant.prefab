@@ -184,7 +184,12 @@ MonoBehaviour:
   healthBarTimer: 0
   ammunition: 
   Explodes: 1
+  damage: 0
   lane: 0
+  upgradeCost: 125
+  name: Barrel
+  Title1: 
+  Title2: 
 --- !u!1 &4988069657096299615
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class EntityProperties : MonoBehaviour
@@ -19,6 +20,16 @@ public class EntityProperties : MonoBehaviour
     private SpawnManager spawnManager;
     public int lane;
     private AudioSource audio;
+
+    // Upgrade
+    public int upgradeCost;
+    private GameObject upgrades;
+    private GameObject upgradeSprite;
+    private UIController UI;
+    public string name;
+    public string Title1;
+    public string Title2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +40,13 @@ public class EntityProperties : MonoBehaviour
         healthBarTimer = 0f;
         spawnManager = GameObject.FindAnyObjectByType<SpawnManager>();
         audio = GetComponent<AudioSource>();
+
+        // Upgrade
+        upgrades = GameObject.Find("Upgrades");
+        upgradeSprite = GameObject.Find("UpgradeSprite");
+        upgrades.SetActive(true);
+        upgrades.SetActive(false);
+        UI = GameObject.FindAnyObjectByType<UIController>().GetComponent<UIController>();
     }
 
     // Update is called once per frame
@@ -112,5 +130,66 @@ public class EntityProperties : MonoBehaviour
     public void setLane(int lane)
     {
         this.lane = lane;
+    }
+
+    // Upgrade Functions
+    private void OnMouseOver()
+    {
+        updateUI();
+    }
+
+    private void OnMouseDown()
+    {
+        if (UI.coins > upgradeCost)
+        {
+            UI.coins -= upgradeCost;
+            upgradeCost *= 2;
+            damage *= 2;
+            currentHealth *= 2;
+            maxHealth *= 2;
+            healthBar.SetHealth(currentHealth);
+            healthBar.SetMaxHealth(maxHealth);
+            healthBar.show();
+            setCooldown /= 2;
+            updateUI();
+            GoldFarming goldFarming = transform.GetComponent<GoldFarming>();
+            if (goldFarming != null)
+            {
+                goldFarming.increaseMiningRate();
+            }
+        }
+    }
+
+    private void OnMouseExit()
+    {
+        upgrades.SetActive(false);
+        healthBar.hide();
+    }
+
+    private void updateUI()
+    {
+        upgrades.SetActive(true);
+        Sprite r = transform.GetComponent<SpriteRenderer>().sprite;
+        upgradeSprite.GetComponent<SpriteRenderer>().sprite = r;
+        upgradeSprite.transform.localScale = new Vector3(transform.localScale.x * 0.05f, transform.localScale.y * 0.125f, transform.localScale.z); ;
+
+        GameObject upgradeCanvas = GameObject.Find("UpgradeCanvas");
+        // Update upgrade info
+        upgradeCanvas.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = name;
+        upgradeCanvas.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = Title1;
+        if (damage > 0)
+        {
+            upgradeCanvas.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = damage + "";
+        }
+        
+        upgradeCanvas.transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = Title2;
+
+        if (cooldown > 0)
+        {
+            upgradeCanvas.transform.GetChild(4).GetComponent<TextMeshProUGUI>().text = "" + setCooldown;
+
+        }
+        upgradeCanvas.transform.GetChild(5).GetComponent<TextMeshProUGUI>().text = "" + upgradeCost;
+
     }
 }

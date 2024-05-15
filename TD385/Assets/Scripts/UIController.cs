@@ -15,7 +15,7 @@ public class UIController : MonoBehaviour
 
     public GameObject information;
     private GameObject InfoSprite;
-    private GameObject UpgradeInfo;
+    private GameObject upgrades;
     private GameObject InfoCanvas;
 
     void Start()
@@ -30,8 +30,8 @@ public class UIController : MonoBehaviour
         InfoCanvas = GameObject.Find("InfoCanvas");
         information.transform.position = new Vector3(transform.position.x + bound.size.x, transform.position.y, transform.position.z);
         information.SetActive(false);
-        UpgradeInfo = GameObject.Find("UpgradeInfo");
-        UpgradeInfo.SetActive(false);
+        upgrades = GameObject.Find("Upgrades");
+        //upgrades.SetActive(false);
     }
 
     // Update is called once per frame

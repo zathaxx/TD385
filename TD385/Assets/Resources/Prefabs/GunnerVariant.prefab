@@ -434,6 +434,10 @@ MonoBehaviour:
   Explodes: 0
   damage: 50
   lane: 0
+  upgradeCost: 200
+  name: Gunner
+  Title1: Damage
+  Title2: Cooldown
 --- !u!50 &3160818954648846025
 Rigidbody2D:
   serializedVersion: 4

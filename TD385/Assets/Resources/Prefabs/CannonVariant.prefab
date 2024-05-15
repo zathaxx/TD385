@@ -287,7 +287,6 @@ GameObject:
   - component: {fileID: 732656213364651885}
   - component: {fileID: 4386941702374240747}
   - component: {fileID: 7102617645931360513}
-  - component: {fileID: -951614490944989824}
   - component: {fileID: 2042426469042307071}
   m_Layer: 0
   m_Name: CannonVariant
@@ -462,28 +461,10 @@ MonoBehaviour:
   Explodes: 0
   damage: 250
   lane: 0
---- !u!114 &-951614490944989824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6870566300530340770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 639c1ded1fdda25489d895b6b1896a4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 100
-  isTall: 0
-  offset: {x: 2, y: 0, z: 0}
-  setCooldown: 0
-  healthBarTimer: 0
-  ammunition: 
-  Explodes: 0
-  lane: 0
-  upgradeCost: 150
+  upgradeCost: 250
+  name: Cannon
+  Title1: Damage
+  Title2: Cooldown
 --- !u!82 &2042426469042307071
 AudioSource:
   m_ObjectHideFlags: 0
