@@ -50,15 +50,9 @@ public class BulletBehaviour : MonoBehaviour
     public void SetDamage(int damage)
     {
         this.damage = damage;
-        if(transform.GetChild(0) != null)
-        {
-            int i = 0;
-            while(transform.GetChild(i) != null)
-            {
-                BulletBehaviour bullet = transform.GetChild(i).GetComponent<BulletBehaviour>();
-                bullet.SetDamage(damage);
-                i++;
-            }
+        for (int i = 0; i < transform.childCount; i++) {
+            BulletBehaviour bullet = transform.GetChild(i).GetComponent<BulletBehaviour>();
+            bullet.SetDamage(damage);
         }
     }
 }

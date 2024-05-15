@@ -21,7 +21,6 @@ public class TowerUpgrade : MonoBehaviour
     public int lane;
 
     public int upgradeCost;
-    private GameObject upgradeInfo;
     private GameObject currentSprite;
     private UIController UI;
 
@@ -34,9 +33,6 @@ public class TowerUpgrade : MonoBehaviour
         healthBar.hide();
         healthBarTimer = 0f;
         spawnManager = GameObject.FindAnyObjectByType<SpawnManager>();
-        upgradeInfo = GameObject.Find("UpgradeInfo");
-        currentSprite = GameObject.Find("CurrentSprite");
-        upgradeInfo.SetActive(false);
         UI = GameObject.FindAnyObjectByType<UIController>().GetComponent<UIController>();
     }
 
@@ -140,12 +136,11 @@ public class TowerUpgrade : MonoBehaviour
 
     private void OnMouseExit()
     {
-        upgradeInfo.SetActive(false);
+        //upgradeInfo.SetActive(false);
     }
 
     private void updateUI()
     {
-        upgradeInfo.SetActive(true);
         Sprite r = transform.GetComponent<SpriteRenderer>().sprite;
         currentSprite.GetComponent<SpriteRenderer>().sprite = r;
         currentSprite.transform.localScale = new Vector3(transform.localScale.x * 0.05f, transform.localScale.y * 0.125f, transform.localScale.z); ;

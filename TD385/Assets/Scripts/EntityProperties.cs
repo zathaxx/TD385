@@ -23,8 +23,8 @@ public class EntityProperties : MonoBehaviour
 
     // Upgrade
     public int upgradeCost;
-    private GameObject upgrades;
-    private GameObject upgradeSprite;
+    public GameObject upgrades;
+    public GameObject upgradeSprite;
     private UIController UI;
     public string name;
     public string Title1;
@@ -39,14 +39,14 @@ public class EntityProperties : MonoBehaviour
         healthBar.hide();
         healthBarTimer = 0f;
         spawnManager = GameObject.FindAnyObjectByType<SpawnManager>();
+        UI = GameObject.FindAnyObjectByType<UIController>().GetComponent<UIController>();
         audio = GetComponent<AudioSource>();
 
         // Upgrade
-        upgrades = GameObject.Find("Upgrades");
-        upgradeSprite = GameObject.Find("UpgradeSprite");
-        upgrades.SetActive(true);
+        upgrades = UI.upgrades;
+        upgradeSprite = upgrades.transform.GetChild(0).gameObject;
+        updateUI();
         upgrades.SetActive(false);
-        UI = GameObject.FindAnyObjectByType<UIController>().GetComponent<UIController>();
     }
 
     // Update is called once per frame
@@ -137,6 +137,11 @@ public class EntityProperties : MonoBehaviour
     private void OnMouseOver()
     {
         updateUI();
+        GoldFarming goldFarming = transform.GetComponent<GoldFarming>();
+        if (goldFarming != null)
+        {
+            goldFarming.updateFarmingUI();
+        }
     }
 
     private void OnMouseDown()
@@ -163,7 +168,12 @@ public class EntityProperties : MonoBehaviour
 
     private void OnMouseExit()
     {
-        healthBarTimer = 0; ;
+        healthBarTimer = 0;
+        upgrades.SetActive(false);
+    }
+
+    private void OnDestroy() {
+        upgrades.SetActive(false);
     }
 
     private void updateUI()
@@ -172,7 +182,7 @@ public class EntityProperties : MonoBehaviour
         healthBarTimer = 10;
         Sprite r = transform.GetComponent<SpriteRenderer>().sprite;
         upgradeSprite.GetComponent<SpriteRenderer>().sprite = r;
-        upgradeSprite.transform.localScale = new Vector3(transform.localScale.x * 0.05f, transform.localScale.y * 0.125f, transform.localScale.z); ;
+        upgradeSprite.transform.localScale = new Vector3(transform.localScale.x * 0.05f, transform.localScale.y * 0.15f, transform.localScale.z); ;
 
         GameObject upgradeCanvas = GameObject.Find("UpgradeCanvas");
         // Update upgrade info

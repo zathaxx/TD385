@@ -32,6 +32,8 @@ public class UITowerBehaviour : MonoBehaviour
         tiles = GameObject.Find("Tilemap").GetComponent<Tilemap>();
         CreateShadow();
         information = uIController.information;
+
+        
     }
 
 
@@ -140,7 +142,7 @@ public class UITowerBehaviour : MonoBehaviour
     }
 
     private GameObject validRepair(Vector3 loc) {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(loc, 0.2f);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(loc, 0.4f);
         foreach (Collider2D col in colliders) {
             if (col.tag == "Dynamite") {
                 return col.gameObject;

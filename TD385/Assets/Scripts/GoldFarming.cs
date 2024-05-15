@@ -10,20 +10,12 @@ public class GoldFarming : MonoBehaviour
     private float time = 0f;
     UIController ui;
 
-    // Upgrade
-
-    private GameObject upgradeInfo;
     private GameObject currentSprite;
 
     // Start is called before the first frame update
     void Start()
     {
         ui = FindFirstObjectByType<UIController>();
-
-        // Upgrade
-        upgradeInfo = GameObject.Find("UpgradeInfo");
-        currentSprite = GameObject.Find("CurrentSprite");
-        upgradeInfo.SetActive(false);
     }
 
     // Update is called once per frame
@@ -40,12 +32,12 @@ public class GoldFarming : MonoBehaviour
     public void increaseMiningRate()
     {
         miningRate *= 2;
-        updateUI();
+        updateFarmingUI();
     }
 
-    private void updateUI()
+    public void updateFarmingUI()
     {
-        GameObject current = GameObject.Find("UpgradeCanvas");
+        GameObject current = ui.UpgradeCanvas;
         // Update upgrade info
         current.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = miningRate + " coins/sec";
         current.transform.GetChild(4).GetComponent<TextMeshProUGUI>().text = "";
