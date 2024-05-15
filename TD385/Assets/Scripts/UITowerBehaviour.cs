@@ -59,8 +59,8 @@ public class UITowerBehaviour : MonoBehaviour
             TileBase tile = tiles.GetTile(cell);
 
             canPlace = validPlacement(world_cell);
-
-            if (tile != null && canPlace)
+            
+            if (tag == "UITower" && tile != null && canPlace)
             {
                 shadow.SetActive(true);
                 shadow.transform.position = new Vector3(world_cell.x + 4f, world_cell.y + 4f, shadow.transform.position.z);
@@ -76,30 +76,39 @@ public class UITowerBehaviour : MonoBehaviour
     {
         if (moving) {
             moving = false;
-            Vector3Int cell = tiles.WorldToCell(transform.position);
-            Vector3 world_cell = tiles.CellToWorld(cell);
-            TileBase tile = tiles.GetTile(cell);
-            if (tile != null && canPlace && uIController.coins - towerCost >= 0)
-            {
-                GameObject e = Instantiate(Resources.Load("Prefabs/" + gameObject.name + "Variant") as GameObject);
-                e.transform.localScale = transform.localScale;
-                e.transform.position = new Vector3(world_cell.x + 4f, world_cell.y + 4f, e.transform.position.z);
-                EntityProperties tower = e.GetComponent<EntityProperties>();
-                float y = 4;
-                for (int i = 0; i < 5; i++)
+            if (tag == "UITower") {
+                Vector3Int cell = tiles.WorldToCell(transform.position);
+                Vector3 world_cell = tiles.CellToWorld(cell);
+                TileBase tile = tiles.GetTile(cell);
+                if (tile != null && canPlace && uIController.coins - towerCost >= 0)
                 {
-                    if (e.transform.position.y == y)
+                    GameObject e = Instantiate(Resources.Load("Prefabs/" + gameObject.name + "Variant") as GameObject);
+                    e.transform.localScale = transform.localScale;
+                    e.transform.position = new Vector3(world_cell.x + 4f, world_cell.y + 4f, e.transform.position.z);
+                    EntityProperties tower = e.GetComponent<EntityProperties>();
+                    float y = 4;
+                    for (int i = 0; i < 5; i++)
                     {
-                        tower.setLane(i);
-                        break;
+                        if (e.transform.position.y == y)
+                        {
+                            tower.setLane(i);
+                            break;
+                        }
+                        else
+                        {
+                            y -= 8;
+                        }
                     }
-                    else
-                    {
-                        y -= 8;
-                    }
+                    uIController.coins -= towerCost;
                 }
-                uIController.coins -= towerCost;
+            } else if (tag == "UIWrench") {
+                GameObject dynamite = validRepair(transform.position);
+                if (dynamite != null && dynamite.GetComponent<LaneDetonation>().readyForDetonation == false && uIController.coins - towerCost >= 0) {
+                    dynamite.GetComponent<LaneDetonation>().ReArm();
+                    uIController.coins -= towerCost;
+                }
             }
+
             transform.localPosition = original_position;
             shadow.SetActive(false);
         } else {
@@ -128,6 +137,16 @@ public class UITowerBehaviour : MonoBehaviour
             }
         }
         return true;
+    }
+
+    private GameObject validRepair(Vector3 loc) {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(loc, 0.2f);
+        foreach (Collider2D col in colliders) {
+            if (col.tag == "Dynamite") {
+                return col.gameObject;
+            }
+        }
+        return null;
     }
 
 
