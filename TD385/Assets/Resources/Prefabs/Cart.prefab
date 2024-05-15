@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 146884507601094201}
   - component: {fileID: -3607054985927084349}
   - component: {fileID: 1775689523467102071}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Cart
-  m_TagString: Tower
+  m_TagString: UITower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -174,5 +174,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d16cc61996f01f643839da5da0151091, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerCost: 150
+  towerCost: 100
   canPlace: 0
+  Title1: Farm Rate
+  Desc1: 5 coins/second
+  Title2: Health
+  Desc2: 300

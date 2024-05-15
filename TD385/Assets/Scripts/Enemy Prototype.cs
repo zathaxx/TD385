@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class EnemyPrototype : MonoBehaviour
 {
-    public int speed;
+    public float speed;
     //private float cooldown;
-    private int initialSpeed;
+    private float initialSpeed;
     private GameObject weapon;
 
-    //private bool stunned = false;
+    private bool stunned = false;
 
     private SpawnManager spawnManager;
     private int lane;
@@ -34,12 +34,12 @@ public class EnemyPrototype : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if(stunned){
-        //     if(speed < initialSpeed)
-        //     {
-        //         speed += 1;
-        //     }else stunned = false;
-        // }
+        if(stunned){
+            if(speed < initialSpeed)
+            {
+                speed += 0.5f * Time.deltaTime;
+            }else stunned = false;
+        }
         transform.position -= speed * Time.smoothDeltaTime * transform.right;
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -64,6 +64,13 @@ public class EnemyPrototype : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
+    private void OnTriggerStay2D(Collider2D collision){
+        if(collision.tag == "Tower" && speed > 0)
+        {
+            speed = 0;
+        }
+    }
+
     private void OnTriggerExit2D(Collider2D collision){
         
         if (collision.tag == "Tower")
@@ -90,7 +97,7 @@ public class EnemyPrototype : MonoBehaviour
     public void Stun()
     {
         speed = 1;
-        //stunned = true;
+        stunned = true;
 
     }
     public void setLane(int lane)

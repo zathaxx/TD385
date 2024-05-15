@@ -14,10 +14,11 @@ public class EntityProperties : MonoBehaviour
     public float healthBarTimer;
     public string ammunition;
     public bool Explodes;
+    public int damage;
 
     private SpawnManager spawnManager;
     public int lane;
-
+    private AudioSource audio;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,7 @@ public class EntityProperties : MonoBehaviour
         healthBar.hide();
         healthBarTimer = 0f;
         spawnManager = GameObject.FindAnyObjectByType<SpawnManager>();
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -62,8 +64,14 @@ public class EntityProperties : MonoBehaviour
             // GameObject muzzleFlash = Instantiate(Resources.Load("Prefabs/ef_3") as GameObject);
             // muzzleFlash.transform.position = transform.position + offset;
             // Destroy(muzzleFlash, 0.3f);
+            if (audio != null) {
+                audio.Play();
+            }
             GameObject bullet = Instantiate(Resources.Load("Prefabs/"+ ammunition) as GameObject);
             bullet.transform.position = transform.position + offset;
+            BulletBehaviour bulletBehavior = bullet.GetComponent<BulletBehaviour>();
+            bulletBehavior.SetDamage(damage);
+            
     }
     private void Explode()
     {

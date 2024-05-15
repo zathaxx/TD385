@@ -14,11 +14,10 @@ public class BulletBehaviour : MonoBehaviour
     public Vector2 explosionSize;
     public float duration;
 
-    public AudioSource audio;
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -41,14 +40,25 @@ public class BulletBehaviour : MonoBehaviour
             GameObject explosion = Instantiate(Resources.Load("Prefabs/Explosion") as GameObject);
             explosion.transform.position = transform.position;
             explosion.transform.localScale = explosionSize;
-            if (audio != null) {
-                audio.Play();
-            }
             Destroy(explosion, 1.1f);
             if(stun){
                 enemy.Stun();
             }
             Destroy(transform.gameObject);
+        }
+    }
+    public void SetDamage(int damage)
+    {
+        this.damage = damage;
+        if(transform.GetChild(0) != null)
+        {
+            int i = 0;
+            while(transform.GetChild(i) != null)
+            {
+                BulletBehaviour bullet = transform.GetChild(i).GetComponent<BulletBehaviour>();
+                bullet.SetDamage(damage);
+                i++;
+            }
         }
     }
 }

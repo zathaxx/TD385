@@ -32,6 +32,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PirateVariant
       objectReference: {fileID: 0}
+    - target: {fileID: 8468168350043514752, guid: 51cf3c8d5649a8b4481529999ace5070, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8577103031831972600, guid: 51cf3c8d5649a8b4481529999ace5070, type: 3}
       propertyPath: m_LocalPosition.x
       value: 27.82
