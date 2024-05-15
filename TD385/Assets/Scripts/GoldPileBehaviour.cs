@@ -32,7 +32,11 @@ public class GoldPileBehaviour : MonoBehaviour
         if (other.tag == "Enemy" && transform.childCount > 0) {
             int index = Random.Range(0, transform.childCount);
             Destroy(transform.GetChild(index).gameObject);
-            Destroy(other.gameObject);
+            EnemyPrototype enemy = other.GetComponent<EnemyPrototype>();
+            if (enemy != null)
+            {
+                enemy.takeDamage(enemy.health);
+            }
         }
     }
 }

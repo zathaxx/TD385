@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
@@ -17,6 +18,18 @@ public class SpawnManager : MonoBehaviour
     private float difficultyCooldown;
     private int difficulty;
 
+    // Waves
+    private int wave;
+    private float waveCooldown;
+    private float betweenWaves;
+    private int waveCheckpoint;
+    private int totalEnemies;
+
+    // Waves UI
+    private GameObject waveCanvas;
+    private GameObject waveCooldownCanvas;
+    private GameObject waveC;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +41,6 @@ public class SpawnManager : MonoBehaviour
             spawnY[i] = y;
             y -= 8;
         }
-        cooldown = 3;
         setCooldown = 2;
 
         numEnemies = new int[spawnY.Length];
@@ -39,44 +51,84 @@ public class SpawnManager : MonoBehaviour
 
         enemies = Resources.LoadAll<GameObject>("Prefabs/Enemies");
 
-        setDifficultyCooldown = 7.5f;
-        difficultyCooldown = cooldown + setDifficultyCooldown;
+        setDifficultyCooldown = 3f;
+        difficultyCooldown = setDifficultyCooldown;
         difficulty = 1;
+
+        // Waves
+        wave = 1;
+        betweenWaves = 10;
+        waveCooldown = betweenWaves;
+        waveCooldown = 10;
+        totalEnemies = 0;
+        waveCheckpoint = 5;
+
+        // Waves UI
+        waveCanvas = GameObject.Find("WaveCanvas");
+        waveCooldownCanvas = GameObject.Find("WaveCooldownCanvas");
+        waveC = GameObject.Find("WaveCooldown");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (cooldown > 0)
+        if (waveCooldown > 0)
         {
-            cooldown -= Time.deltaTime;
-        }
-        else
-        {
-            for (int i = 0; i < difficulty; i++ )
+            if (totalEnemies <= 0)
             {
-                int enemyIndex = Random.Range(0, enemies.Length);
-                GameObject enemy = Instantiate(enemies[enemyIndex]);
-                int index = Random.Range(0, spawnY.Length);
-                Vector3 pos = new Vector3(spawnX, spawnY[index], 0);
-                enemy.transform.position = pos;
-                cooldown = setCooldown;
-                EnemyPrototype ep = enemy.GetComponent<EnemyPrototype>();
-                ep.setLane(index);
-                numEnemies[index]++;
-
+                waveCanvas.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = wave + "";
+                waveC.SetActive(true);
+                waveCooldown -= Time.deltaTime;
+                int wc = (int)waveCooldown;
+                waveCooldownCanvas.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = wc + "";
                 
             }
         }
-
-        if (difficultyCooldown > 0)
-        {
-            difficultyCooldown -= Time.deltaTime;
-        }
         else
         {
-            difficultyCooldown = setDifficultyCooldown;
-            difficulty++;
+            waveC.SetActive(false);
+            if (cooldown > 0)
+            {
+                cooldown -= Time.deltaTime;
+            }
+            else
+            {
+                for (int i = 0; i < difficulty; i++)
+                {
+                    int enemyIndex = Random.Range(0, enemies.Length);
+                    GameObject enemy = Instantiate(enemies[enemyIndex]);
+                    int index = Random.Range(0, spawnY.Length);
+                    Vector3 pos = new Vector3(spawnX, spawnY[index], 0);
+                    enemy.transform.position = pos;
+                    cooldown = setCooldown;
+                    EnemyPrototype ep = enemy.GetComponent<EnemyPrototype>();
+                    ep.setLane(index);
+                    ep.upgradeEnemy(wave);
+                    lock(this)
+                    {
+                        numEnemies[index]++;
+                        totalEnemies++;
+                    }
+                    
+                    
+                }
+                if (difficulty % waveCheckpoint == 0)
+                {
+                    waveCooldown = betweenWaves;
+                    wave++;
+                    difficulty++;
+                }
+            }
+
+            if (difficultyCooldown > 0)
+            {
+                difficultyCooldown -= Time.deltaTime;
+            }
+            else
+            {
+                difficultyCooldown = setDifficultyCooldown;
+                difficulty++;
+            }
         }
     }
 
@@ -87,6 +139,16 @@ public class SpawnManager : MonoBehaviour
 
     public void enemyDestroyed(int lane)
     {
-        numEnemies[lane]--;
+        lock(this) {
+            if (numEnemies[lane] > 0) {
+                numEnemies[lane]--;
+            }
+            
+            if (totalEnemies > 0)
+            {
+                totalEnemies--;
+            }
+        }
     }
+
 }

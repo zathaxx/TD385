@@ -17,7 +17,7 @@ public class EnemyPrototype : MonoBehaviour
 
     public int health = 100;
 
-    private bool dead;
+    private int dead;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +28,7 @@ public class EnemyPrototype : MonoBehaviour
         spawnManager = GameObject.FindAnyObjectByType<SpawnManager>();
         //cooldown = 0f;
 
-        dead = false;
+        dead = 0;
     }
 
     // Update is called once per frame
@@ -87,10 +87,12 @@ public class EnemyPrototype : MonoBehaviour
         {
             if (weapon != null)
                 Destroy(weapon);
-            if (!dead)
+            lock(this)
+            {
                 spawnManager.enemyDestroyed(lane);
-            dead = true;
-            Destroy(transform.gameObject);
+                Destroy(transform.gameObject);
+            }
+                
         }
     }
 
@@ -103,5 +105,10 @@ public class EnemyPrototype : MonoBehaviour
     public void setLane(int lane)
     {
         this.lane = lane;
+    }
+
+    public void upgradeEnemy(int level)
+    {
+        health = health * (9 + level) / 10;
     }
 }

@@ -67,6 +67,7 @@ public class EntityProperties : MonoBehaviour
         if (healthBarTimer > 0)
         {
             healthBarTimer -= Time.deltaTime;
+            healthBar.show();
         }
         else
         {
@@ -143,14 +144,14 @@ public class EntityProperties : MonoBehaviour
         if (UI.coins > upgradeCost)
         {
             UI.coins -= upgradeCost;
-            upgradeCost *= 2;
-            damage *= 2;
-            currentHealth *= 2;
-            maxHealth *= 2;
+            upgradeCost = upgradeCost * 3 / 2;
+            damage = damage * 11 / 10;
+            currentHealth = currentHealth * 11 / 10;
+            maxHealth = maxHealth * 11 / 10;
             healthBar.SetHealth(currentHealth);
             healthBar.SetMaxHealth(maxHealth);
             healthBar.show();
-            setCooldown /= 2;
+            setCooldown = setCooldown / 11 * 10;
             updateUI();
             GoldFarming goldFarming = transform.GetComponent<GoldFarming>();
             if (goldFarming != null)
@@ -162,13 +163,13 @@ public class EntityProperties : MonoBehaviour
 
     private void OnMouseExit()
     {
-        upgrades.SetActive(false);
-        healthBar.hide();
+        healthBarTimer = 0; ;
     }
 
     private void updateUI()
     {
         upgrades.SetActive(true);
+        healthBarTimer = 10;
         Sprite r = transform.GetComponent<SpriteRenderer>().sprite;
         upgradeSprite.GetComponent<SpriteRenderer>().sprite = r;
         upgradeSprite.transform.localScale = new Vector3(transform.localScale.x * 0.05f, transform.localScale.y * 0.125f, transform.localScale.z); ;
