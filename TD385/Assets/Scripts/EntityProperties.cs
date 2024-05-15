@@ -67,7 +67,7 @@ public class EntityProperties : MonoBehaviour
     }
     private void Explode()
     {
-        GameObject explosion = Instantiate(Resources.Load("Prefabs/Explosion") as GameObject);
+        GameObject explosion = Instantiate(Resources.Load("Prefabs/LaneExplosion") as GameObject);
         explosion.transform.position = transform.position;
         Destroy(explosion, 1.1f);
     }

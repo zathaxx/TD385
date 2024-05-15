@@ -352,7 +352,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 3668938499985076069, guid: e5a271d844bd6174f8f790091b16796d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -426,7 +426,7 @@ MonoBehaviour:
   currentHealth: 50
   isTall: 0
   healthBar: {fileID: 8928214497609711669}
-  offset: {x: 2.15, y: -0.095, z: 0}
+  offset: {x: 2.2, y: -0.095, z: 0}
   setCooldown: 1.5
   healthBarTimer: 0
   ammunition: buckshot
