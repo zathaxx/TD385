@@ -13,9 +13,11 @@ public class UIController : MonoBehaviour
     GameObject background;
     public GameObject gameOverScreen;
 
-    private GameObject information;
+    public GameObject information;
     private GameObject InfoSprite;
     private GameObject UpgradeInfo;
+    private GameObject InfoCanvas;
+
     void Start()
     {
         Vector3 topLeft = Camera.main.ViewportToWorldPoint(new Vector3(0f, 1f, 1f));
@@ -24,8 +26,8 @@ public class UIController : MonoBehaviour
         transform.position = new Vector3(topLeft.x + (bound.size.x/2), topLeft.y - (bound.size.y/2), transform.position.z);
         textComponent = GameObject.Find("Balance").GetComponent<TextMeshProUGUI>();
         coins = 500;
-        information = GameObject.Find("Information");
         InfoSprite = GameObject.Find("InfoSprite");
+        InfoCanvas = GameObject.Find("InfoCanvas");
         information.transform.position = new Vector3(transform.position.x + bound.size.x, transform.position.y, transform.position.z);
         information.SetActive(false);
         UpgradeInfo = GameObject.Find("UpgradeInfo");
@@ -39,8 +41,7 @@ public class UIController : MonoBehaviour
         Bounds bound = background.GetComponent<SpriteRenderer>().bounds;
         transform.position = new Vector3(topLeft.x + (bound.size.x/2), topLeft.y - (bound.size.y/2), transform.position.z);
         textComponent.text = coins.ToString();
-
-        if (GameObject.Find("Gold").transform.childCount <= 0) {
+        if (GameObject.Find("GoldPile").transform.childCount <= 0) {
             gameOverScreen.SetActive(true);
         }
     }
@@ -61,10 +62,19 @@ public class UIController : MonoBehaviour
         InfoSprite.GetComponent<SpriteRenderer>().sprite = r;
         Vector3 size = new Vector3(UITower.transform.localScale.x * 0.0625f, UITower.transform.localScale.y * 0.125f, UITower.transform.localScale.z);
         InfoSprite.transform.localScale = size;
+        setTextComponents(UITower);
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 infoBounds = information.GetComponent<Renderer>().bounds.size;
 
-        GameObject InfoCanvas = GameObject.Find("InfoCanvas");
+        information.transform.position = new Vector3(mousePos.x + infoBounds.x / 2f, mousePos.y - infoBounds.y / 2f, 0f);
+    }
+
+    private void setTextComponents(GameObject UITower) {
+        UITowerBehaviour uITowerBehaviour = UITower.GetComponent<UITowerBehaviour>();
         InfoCanvas.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = UITower.name;
-        //InfoCanvas.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "100";
-        //InfoCanvas.transform.GetChild(4).GetComponent<TextMeshProUGUI>().text = "4s";
+        InfoCanvas.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = uITowerBehaviour.Title1;
+        InfoCanvas.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = uITowerBehaviour.Desc1;
+        InfoCanvas.transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = uITowerBehaviour.Title2;
+        InfoCanvas.transform.GetChild(4).GetComponent<TextMeshProUGUI>().text = uITowerBehaviour.Desc2;
     }
 }

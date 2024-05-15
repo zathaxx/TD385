@@ -17,6 +17,11 @@ public class UITowerBehaviour : MonoBehaviour
     public bool canPlace;
     GameObject shadow;
     private GameObject information;
+    public string Title1;
+    public string Desc1;
+    public string Title2;
+    public string Desc2;
+
 
     void Start()
     {
@@ -25,8 +30,8 @@ public class UITowerBehaviour : MonoBehaviour
         original_position = transform.localPosition;
         moving = false;
         tiles = GameObject.Find("Tilemap").GetComponent<Tilemap>();
-        information = GameObject.Find("Information");
         CreateShadow();
+        information = uIController.information;
     }
 
 
