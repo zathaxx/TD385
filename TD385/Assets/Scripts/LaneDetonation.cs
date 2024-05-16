@@ -1,19 +1,14 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class LaneDetonation : MonoBehaviour
 {
+ 
     public bool readyForDetonation = true;
-    private float time = 0;
-    private float delay = 3f;
     public Sprite Armed;
     public Sprite Detonated;
-    // Start is called before the first frame update
     
-    public async void Detonation()
+    public IEnumerator Detonation()
     {
         float i = transform.position.x;
         while(i < 50)
@@ -23,7 +18,7 @@ public class LaneDetonation : MonoBehaviour
             pos.x = i;
             explosion.transform.position = pos;
             Destroy(explosion, 1.1f);
-            await Task.Delay(100);
+            yield return new WaitForSeconds(0.1f);
             i += 8;
         }
     }
