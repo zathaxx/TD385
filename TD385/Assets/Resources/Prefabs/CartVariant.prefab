@@ -26,8 +26,8 @@ Transform:
   m_GameObject: {fileID: 766870333676481390}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5, y: 2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.269, y: 0.56, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4546715555200250879}
@@ -112,8 +112,8 @@ Transform:
   m_GameObject: {fileID: 855512184858999673}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.284, y: 0.567, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4546715555200250879}
@@ -267,8 +267,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.01, y: 2.35}
-  m_SizeDelta: {x: 1012.2416, y: 270.6431}
+  m_AnchoredPosition: {x: -0.018, y: 0.488}
+  m_SizeDelta: {x: 305.421, y: 81.6605}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &900835271307913219
 Canvas:
@@ -459,7 +459,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.74, y: 0.3, z: -0.14651468}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalScale: {x: 4.5, y: 4.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8762520721341260152}
@@ -509,7 +509,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 84008059606723830, guid: e88d0d4d4a5a934459bd0d7c37573322, type: 3}
+  m_Sprite: {fileID: -6756224647795966196, guid: 66c7d042556c84f488ab74808aee2ed8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -554,17 +554,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.48992234}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.5, y: 3.85}
+    oldSize: {x: 0.9375, y: 0.84375}
     newSize: {x: 4.5, y: 3.85}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.5, y: 4.8298445}
+  m_Size: {x: 0.9375, y: 0.84375}
   m_EdgeRadius: 0
 --- !u!50 &455791869984791880
 Rigidbody2D:
@@ -617,6 +617,8 @@ MonoBehaviour:
   damage: 0
   lane: 0
   upgradeCost: 250
+  upgrades: {fileID: 0}
+  upgradeSprite: {fileID: 0}
   name: Cart
   Title1: Farm Rate
   Title2: 
@@ -633,7 +635,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miningRate: 10
-  upgradeCost: 0
 --- !u!1 &3974414633105081309
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,8 +661,8 @@ Transform:
   m_GameObject: {fileID: 3974414633105081309}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.74, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.011, y: 0.68, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4546715555200250879}
