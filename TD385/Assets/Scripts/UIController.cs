@@ -33,7 +33,8 @@ public class UIController : MonoBehaviour
         information.SetActive(false);
         upgrades = GameObject.Find("Upgrades");
         UpgradeCanvas = GameObject.Find("UpgradeCanvas");
-        upgrades.transform.position = new Vector3(transform.position.x + bound.size.x, transform.position.y, transform.position.z);
+        Bounds upgradeBound = upgrades.GetComponent<SpriteRenderer>().bounds;
+        upgrades.transform.position = new Vector3(transform.position.x + (bound.size.x/2) + (upgradeBound.size.x/2) + 5f, transform.position.y, transform.position.z);
 
         
         upgrades.SetActive(false);
@@ -42,9 +43,9 @@ public class UIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 topLeft = Camera.main.ViewportToWorldPoint(new Vector3(0f, 1f, 1f));
+        Vector3 topLeft = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 1f, 1f));
         Bounds bound = background.GetComponent<SpriteRenderer>().bounds;
-        transform.position = new Vector3(topLeft.x + (bound.size.x/2), topLeft.y - (bound.size.y/2), transform.position.z);
+        transform.position = new Vector3(topLeft.x, topLeft.y - (bound.size.y/2), transform.position.z);
         textComponent.text = coins.ToString();
         if (GameObject.Find("GoldPile").transform.childCount <= 0) {
             gameOverScreen.SetActive(true);

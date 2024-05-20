@@ -21,6 +21,8 @@ public class LaneDetonation : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
             i += 8;
         }
+
+        yield return null;
     }
     public void ReArm()
     {

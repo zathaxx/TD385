@@ -34,6 +34,11 @@ public class EnemyPrototype : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (speed == 0 && !stunned) {
+            stunned = true;
+        }
+
+
         if(stunned){
             if(speed < initialSpeed)
             {
@@ -67,7 +72,16 @@ public class EnemyPrototype : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision){
         if(collision.tag == "Tower" && speed > 0)
         {
-            speed = 0;
+            EntityProperties e = collision.GetComponent<EntityProperties>();
+            BoxCollider2D tower = collision.GetComponent<BoxCollider2D>();
+            float towerRight = e.transform.position.x + (tower.bounds.size.x / 2);
+            BoxCollider2D enemy = GetComponent<BoxCollider2D>();
+            float enemyLeft = transform.position.x - (enemy.bounds.size.x / 2);
+
+            if (towerRight - 0.5f < enemyLeft && speed > 0) 
+            {
+                speed = 0;
+            }
         }
     }
 
@@ -87,13 +101,15 @@ public class EnemyPrototype : MonoBehaviour
         {
             if (weapon != null)
                 Destroy(weapon);
-            lock(this)
-            {
-                spawnManager.enemyDestroyed(lane);
-                Destroy(transform.gameObject);
-            }
+            
+            Destroy(transform.gameObject);
+
                 
         }
+    }
+
+    void OnDestroy() {
+        spawnManager.enemyDestroyed(lane);
     }
 
     public void Stun()

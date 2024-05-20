@@ -58,10 +58,10 @@ public class EntityProperties : MonoBehaviour
         }
         else
          {
-             if (spawnManager.checkLane(lane) && ammunition != "")
-             {
-                 shoot();
-             }
+            if (spawnManager.checkLane(lane) && ammunition != "")
+            {
+                shoot();
+            }
         }
 
         if (healthBarTimer > 0)
@@ -173,7 +173,9 @@ public class EntityProperties : MonoBehaviour
     }
 
     private void OnDestroy() {
-        upgrades.SetActive(false);
+        if (upgrades != null) {
+            upgrades.SetActive(false);
+        }
     }
 
     private void updateUI()
@@ -182,7 +184,7 @@ public class EntityProperties : MonoBehaviour
         healthBarTimer = 10;
         Sprite r = transform.GetComponent<SpriteRenderer>().sprite;
         upgradeSprite.GetComponent<SpriteRenderer>().sprite = r;
-        upgradeSprite.transform.localScale = new Vector3(transform.localScale.x * 0.05f, transform.localScale.y * 0.15f, transform.localScale.z); ;
+        upgradeSprite.transform.localScale = new Vector3(transform.localScale.x * 0.1f, transform.localScale.y * 0.1f, transform.localScale.z); ;
 
         GameObject upgradeCanvas = GameObject.Find("UpgradeCanvas");
         // Update upgrade info
