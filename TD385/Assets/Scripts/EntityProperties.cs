@@ -156,7 +156,7 @@ public class EntityProperties : MonoBehaviour
             healthBar.SetHealth(currentHealth);
             healthBar.SetMaxHealth(maxHealth);
             healthBar.show();
-            setCooldown = setCooldown / 11 * 10;
+            setCooldown = setCooldown * 9 / 10;
             updateUI();
             GoldFarming goldFarming = transform.GetComponent<GoldFarming>();
             if (goldFarming != null)
@@ -164,7 +164,7 @@ public class EntityProperties : MonoBehaviour
                 goldFarming.increaseMiningRate();
             }
         }
-    }
+    }  
 
     private void OnMouseExit()
     {
