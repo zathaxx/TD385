@@ -423,8 +423,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec9b5729b95fff49a27f6d38e57c77d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 50
-  currentHealth: 50
+  maxHealth: 75
+  currentHealth: 75
   isTall: 0
   healthBar: {fileID: 8928214497609711669}
   offset: {x: 2.5, y: -0.095, z: 0}
@@ -432,7 +432,7 @@ MonoBehaviour:
   healthBarTimer: 0
   ammunition: buckshot
   Explodes: 0
-  damage: 50
+  damage: 60
   lane: 0
   upgradeCost: 200
   upgrades: {fileID: 0}
