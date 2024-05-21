@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9c150d2ebffbca543817a94bdcb9d16b
+guid: ecac985943bfc234483c15ec7fa965e3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9178235399515134325
-    second: wrench2_0
+      213: 1321142509957342022
+    second: cannon 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wrench2_0
+      name: cannon 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 61
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 579d30da774af5f70800000000000000
-      internalID: 9178235399515134325
+      spriteID: 643eca3fc14a55210800000000000000
+      internalID: 1321142509957342022
       vertices: []
       indices: 
       edges: []
@@ -144,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      wrench2_0: 9178235399515134325
+      cannon 1_0: 1321142509957342022
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

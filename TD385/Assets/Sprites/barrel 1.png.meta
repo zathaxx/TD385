@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9c150d2ebffbca543817a94bdcb9d16b
+guid: e4a8ade996d94e14586c896b9bbd7fb7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9178235399515134325
-    second: wrench2_0
+      213: -6766068427942371473
+    second: barrel 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,12 +113,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wrench2_0
+      name: barrel 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 28
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 579d30da774af5f70800000000000000
-      internalID: 9178235399515134325
+      spriteID: f6f528aec981a12a0800000000000000
+      internalID: -6766068427942371473
       vertices: []
       indices: 
       edges: []
@@ -144,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      wrench2_0: 9178235399515134325
+      barrel 1_0: -6766068427942371473
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

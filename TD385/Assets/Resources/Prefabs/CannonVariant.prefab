@@ -38,8 +38,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -1.3, y: 5.41}
-  m_SizeDelta: {x: 539.478, y: 171.114}
+  m_AnchoredPosition: {x: -0.352, y: 1.469}
+  m_SizeDelta: {x: 213.6304, y: 67.7602}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &8650777254202843925
 Canvas:
@@ -305,7 +305,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.32, y: 0.07, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9001103110435671180}
@@ -354,7 +354,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -5333349321414413341, guid: 2f141e3f0d7e10546b81b4a7deeff540, type: 3}
+  m_Sprite: {fileID: 1321142509957342022, guid: ecac985943bfc234483c15ec7fa965e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -399,17 +399,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 2.0362182}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.49999997, y: 0.55}
-    oldSize: {x: 18.43, y: 9.8}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.8125, y: 2.5625}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 18.43, y: 13.8724375}
+  m_Size: {x: 3.8125, y: 2.5625}
   m_EdgeRadius: 0
 --- !u!50 &4386941702374240747
 Rigidbody2D:
@@ -462,6 +462,8 @@ MonoBehaviour:
   damage: 250
   lane: 0
   upgradeCost: 250
+  upgrades: {fileID: 0}
+  upgradeSprite: {fileID: 0}
   name: Cannon
   Title1: Damage
   Title2: Cooldown
