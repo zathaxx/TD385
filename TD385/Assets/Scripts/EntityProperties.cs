@@ -169,7 +169,9 @@ public class EntityProperties : MonoBehaviour
     private void OnMouseExit()
     {
         healthBarTimer = 0;
-        upgrades.SetActive(false);
+        if (upgrades != null) {
+            upgrades.SetActive(false);
+        }
     }
 
     private void OnDestroy() {
@@ -180,29 +182,32 @@ public class EntityProperties : MonoBehaviour
 
     private void updateUI()
     {
-        upgrades.SetActive(true);
-        healthBarTimer = 10;
-        Sprite r = transform.GetComponent<SpriteRenderer>().sprite;
-        upgradeSprite.GetComponent<SpriteRenderer>().sprite = r;
-        upgradeSprite.transform.localScale = new Vector3(transform.localScale.x * 0.1f, transform.localScale.y * 0.1f, transform.localScale.z); ;
+        if (gameObject.name.Substring(0, 6) != "Barrel") {
+            upgrades.SetActive(true);
+            healthBarTimer = 10;
+            Sprite r = transform.GetComponent<SpriteRenderer>().sprite;
+            upgradeSprite.GetComponent<SpriteRenderer>().sprite = r;
+            upgradeSprite.transform.localScale = new Vector3(transform.localScale.x * 0.1f, transform.localScale.y * 0.1f, transform.localScale.z); ;
 
-        GameObject upgradeCanvas = GameObject.Find("UpgradeCanvas");
-        // Update upgrade info
-        upgradeCanvas.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = name;
-        upgradeCanvas.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = Title1;
-        if (damage > 0)
-        {
-            upgradeCanvas.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = damage + "";
+            GameObject upgradeCanvas = GameObject.Find("UpgradeCanvas");
+            // Update upgrade info
+            upgradeCanvas.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = name;
+            upgradeCanvas.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = Title1;
+            if (damage > 0)
+            {
+                upgradeCanvas.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = damage + "";
+            }
+            
+            upgradeCanvas.transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = Title2;
+
+            if (cooldown > 0)
+            {
+                upgradeCanvas.transform.GetChild(4).GetComponent<TextMeshProUGUI>().text = "" + setCooldown;
+
+            }
+            upgradeCanvas.transform.GetChild(5).GetComponent<TextMeshProUGUI>().text = "" + upgradeCost;
         }
-        
-        upgradeCanvas.transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = Title2;
 
-        if (cooldown > 0)
-        {
-            upgradeCanvas.transform.GetChild(4).GetComponent<TextMeshProUGUI>().text = "" + setCooldown;
-
-        }
-        upgradeCanvas.transform.GetChild(5).GetComponent<TextMeshProUGUI>().text = "" + upgradeCost;
 
     }
 }
