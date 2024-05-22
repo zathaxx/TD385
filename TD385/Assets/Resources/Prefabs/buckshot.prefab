@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.10452846, w: 0.9945219}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.050000004, y: 0.050000004, z: 1}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 743907450648558595}
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3353040379111532628, guid: ee1900f2c10c9944b8cebc21e8bf1377, type: 3}
+  m_Sprite: {fileID: -4292495330238500785, guid: 9a6da7323721b8d419fd3b811d2e5299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -124,7 +124,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 1.28
+  m_Radius: 0.50000006
 --- !u!50 &4308514168037737129
 Rigidbody2D:
   serializedVersion: 4
@@ -170,7 +170,6 @@ MonoBehaviour:
   stun: 0
   explosionSize: {x: 0.2, y: 0.2}
   duration: 1
-  audio: {fileID: 0}
 --- !u!1 &2352075123932872680
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,7 +200,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.10452837, w: 0.9945219}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.050000004, y: 0.050000004, z: 1}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 743907450648558595}
@@ -249,7 +248,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3353040379111532628, guid: ee1900f2c10c9944b8cebc21e8bf1377, type: 3}
+  m_Sprite: {fileID: -4292495330238500785, guid: 9a6da7323721b8d419fd3b811d2e5299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -295,7 +294,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 1.28
+  m_Radius: 0.5
 --- !u!50 &7203818269531105715
 Rigidbody2D:
   serializedVersion: 4
@@ -341,7 +340,6 @@ MonoBehaviour:
   stun: 0
   explosionSize: {x: 0.2, y: 0.2}
   duration: 1
-  audio: {fileID: 0}
 --- !u!1 &2717614568800539243
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,7 +395,6 @@ MonoBehaviour:
   stun: 0
   explosionSize: {x: 0, y: 0}
   duration: 1
-  audio: {fileID: 0}
 --- !u!1 &3258022638140916991
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,7 +425,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 743907450648558595}
@@ -476,7 +473,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3353040379111532628, guid: ee1900f2c10c9944b8cebc21e8bf1377, type: 3}
+  m_Sprite: {fileID: -4292495330238500785, guid: 9a6da7323721b8d419fd3b811d2e5299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -522,7 +519,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 1.28
+  m_Radius: 0.5
 --- !u!50 &6136449676944557877
 Rigidbody2D:
   serializedVersion: 4
@@ -538,7 +535,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -568,7 +565,6 @@ MonoBehaviour:
   stun: 0
   explosionSize: {x: 0.2, y: 0.2}
   duration: 1
-  audio: {fileID: 0}
 --- !u!1 &4370693204668531742
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,7 +595,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.052335896, w: 0.9986295}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 743907450648558595}
@@ -647,7 +643,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3353040379111532628, guid: ee1900f2c10c9944b8cebc21e8bf1377, type: 3}
+  m_Sprite: {fileID: -4292495330238500785, guid: 9a6da7323721b8d419fd3b811d2e5299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -693,7 +689,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 1.28
+  m_Radius: 0.5
 --- !u!50 &5135403489888555691
 Rigidbody2D:
   serializedVersion: 4
@@ -739,7 +735,6 @@ MonoBehaviour:
   stun: 0
   explosionSize: {x: 0.2, y: 0.2}
   duration: 1
-  audio: {fileID: 0}
 --- !u!1 &8876423724261246047
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,7 +765,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.052335896, w: 0.9986295}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 743907450648558595}
@@ -818,7 +813,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3353040379111532628, guid: ee1900f2c10c9944b8cebc21e8bf1377, type: 3}
+  m_Sprite: {fileID: -4292495330238500785, guid: 9a6da7323721b8d419fd3b811d2e5299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -864,7 +859,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 1.28
+  m_Radius: 0.5
 --- !u!50 &8660335536298015408
 Rigidbody2D:
   serializedVersion: 4
@@ -910,4 +905,3 @@ MonoBehaviour:
   stun: 0
   explosionSize: {x: 0.2, y: 0.2}
   duration: 1
-  audio: {fileID: 0}

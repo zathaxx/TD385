@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2673763001472853126}
   - component: {fileID: 2186430369537027609}
   - component: {fileID: 4858757004219626047}
+  - component: {fileID: -6940294970769745214}
   m_Layer: 0
   m_Name: cannon_ball
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.751112, y: 0.7842222, z: -5}
-  m_LocalScale: {x: 0.175, y: 0.175, z: 0.2}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 3353040379111532628, guid: ee1900f2c10c9944b8cebc21e8bf1377, type: 3}
+  m_Sprite: {fileID: -4292495330238500785, guid: 9a6da7323721b8d419fd3b811d2e5299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -127,13 +128,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 2.56}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 2.56, y: 2.56}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.56, y: 2.56}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!50 &2186430369537027609
 Rigidbody2D:
@@ -180,7 +181,6 @@ MonoBehaviour:
   stun: 1
   explosionSize: {x: 0.75, y: 0.75}
   duration: 3
-  audio: {fileID: 0}
 --- !u!82 &-6940294970769745214
 AudioSource:
   m_ObjectHideFlags: 0
