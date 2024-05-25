@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class ExplosionBehavior : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class ExplosionBehavior : MonoBehaviour
     void Start()
     {
         audio = GetComponent<AudioSource>();
+        audio.outputAudioMixerGroup = Resources.Load<AudioMixer>("ExplosionMixer").FindMatchingGroups("Explosions")[0];
+
+
         if (audio != null) {
             audio.Play();
         }

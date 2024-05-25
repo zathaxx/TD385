@@ -616,7 +616,7 @@ MonoBehaviour:
   Explodes: 0
   damage: 0
   lane: 0
-  upgradeCost: 250
+  upgradeCost: 200
   upgrades: {fileID: 0}
   upgradeSprite: {fileID: 0}
   name: Cart

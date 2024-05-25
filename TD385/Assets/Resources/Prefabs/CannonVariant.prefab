@@ -459,7 +459,7 @@ MonoBehaviour:
   healthBarTimer: 0
   ammunition: cannon_ball
   Explodes: 0
-  damage: 200
+  damage: 250
   lane: 0
   upgradeCost: 250
   upgrades: {fileID: 0}

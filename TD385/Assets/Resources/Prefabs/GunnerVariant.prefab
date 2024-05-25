@@ -432,7 +432,7 @@ MonoBehaviour:
   healthBarTimer: 0
   ammunition: buckshot
   Explodes: 0
-  damage: 60
+  damage: 120
   lane: 0
   upgradeCost: 200
   upgrades: {fileID: 0}

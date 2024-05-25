@@ -31,7 +31,7 @@ public class GoldFarming : MonoBehaviour
     // Upgrade Functions
     public void increaseMiningRate()
     {
-        miningRate += 5;
+        miningRate += 2;
         updateFarmingUI();
     }
 

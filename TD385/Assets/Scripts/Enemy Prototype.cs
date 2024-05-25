@@ -17,9 +17,9 @@ public class EnemyPrototype : MonoBehaviour
 
     public int health = 100;
 
-    private int dead;
-    // Start is called before the first frame update
-    void Start()
+    public int damage;
+    // Awake is called before the first frame update
+    void Awake()
     {
         initialSpeed = speed;
 
@@ -28,7 +28,7 @@ public class EnemyPrototype : MonoBehaviour
         spawnManager = GameObject.FindAnyObjectByType<SpawnManager>();
         //cooldown = 0f;
 
-        dead = 0;
+        damage = 10;
     }
 
     // Update is called once per frame
@@ -42,7 +42,7 @@ public class EnemyPrototype : MonoBehaviour
         if(stunned){
             if(speed < initialSpeed)
             {
-                speed += 0.5f * Time.deltaTime;
+                speed += 0.8f * Time.deltaTime;
             }else stunned = false;
         }
         transform.position -= speed * Time.smoothDeltaTime * transform.right;
@@ -60,7 +60,9 @@ public class EnemyPrototype : MonoBehaviour
                 speed = 0;
                 Vector3 pos = transform.position;
                 weapon = Instantiate(Resources.Load("Prefabs/Weapon") as GameObject);
+                weapon.GetComponent<WeaponBehavior>().setDamage(damage);
                 weapon.transform.position = new Vector3(pos.x - 0.8f, pos.y - .1f, pos.z);
+                weapon.transform.parent = transform;
             }
         }
         
@@ -90,7 +92,8 @@ public class EnemyPrototype : MonoBehaviour
         if (collision.tag == "Tower")
         {
             speed = initialSpeed;
-            Destroy(weapon);
+            if (weapon != null)
+                Destroy(weapon);
             //cooldown = 0f;
         }
     }
@@ -126,5 +129,6 @@ public class EnemyPrototype : MonoBehaviour
     public void upgradeEnemy(int level)
     {
         health = health * (9 + level) / 10;
+        damage = damage + ((level - 1) * 2);
     }
 }

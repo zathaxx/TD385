@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+
 public class EntityProperties : MonoBehaviour
 {
     public int maxHealth;
@@ -151,8 +152,8 @@ public class EntityProperties : MonoBehaviour
             UI.coins -= upgradeCost;
             upgradeCost = upgradeCost * 3 / 2;
             damage = damage * 11 / 10;
-            currentHealth = currentHealth * 11 / 10;
-            maxHealth = maxHealth * 11 / 10;
+            currentHealth = currentHealth * 13 / 10;
+            maxHealth = maxHealth * 13 / 10;
             healthBar.SetHealth(currentHealth);
             healthBar.SetMaxHealth(maxHealth);
             healthBar.show();
