@@ -3929,7 +3929,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8124180625136652510, guid: 8ba2acce03a91d84cb2e312b3eff098f, type: 3}
       propertyPath: Desc1
-      value: 60
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: -8124180625136652510, guid: 8ba2acce03a91d84cb2e312b3eff098f, type: 3}
       propertyPath: Desc2
@@ -5425,7 +5425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1775689523467102071, guid: 522e4b724e284d748a5211f39f434b02, type: 3}
       propertyPath: Desc1
-      value: 10 coins/second
+      value: 5 coins/second
       objectReference: {fileID: 0}
     - target: {fileID: 1775689523467102071, guid: 522e4b724e284d748a5211f39f434b02, type: 3}
       propertyPath: Desc2
@@ -7247,7 +7247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7128558913948367419, guid: 2e8da71acee7cc142b8f7e53aa7796c8, type: 3}
       propertyPath: Desc1
-      value: 200
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 7128558913948367419, guid: 2e8da71acee7cc142b8f7e53aa7796c8, type: 3}
       propertyPath: Desc2
