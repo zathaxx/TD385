@@ -7,7 +7,14 @@ public class LaneDetonation : MonoBehaviour
     public bool readyForDetonation = true;
     public Sprite Armed;
     public Sprite Detonated;
-    
+
+    private AudioSource audio;
+
+    public void Start()
+    {
+        audio = GetComponent<AudioSource>();
+    }
+
     public IEnumerator Detonation()
     {
         float i = transform.position.x;
@@ -29,6 +36,10 @@ public class LaneDetonation : MonoBehaviour
         SpriteRenderer sprite = GetComponent<SpriteRenderer>();
         sprite.sprite = Armed;
         readyForDetonation = true;
+        if (audio != null)
+        {
+            audio.Play();
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

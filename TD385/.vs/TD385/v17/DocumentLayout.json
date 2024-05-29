@@ -3,36 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\assets\\scripts\\entityproperties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|c:\\users\\paul\\desktop\\uwbothell\\spring2024\\css385\\github\\td385\\td385\\assets\\scripts\\entityproperties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entityproperties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|c:\\users\\paul\\desktop\\uwbothell\\spring2024\\css385\\github\\td385\\td385\\assets\\scripts\\goldfarming.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\goldfarming.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|c:\\users\\paul\\desktop\\uwbothell\\spring2024\\css385\\github\\td385\\td385\\assets\\scripts\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\assets\\scripts\\enemy prototype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy prototype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\assets\\scripts\\explosionbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\explosionbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\assets\\scripts\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\assets\\scripts\\lanedetonation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\lanedetonation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\assets\\scripts\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\assets\\scripts\\explosionbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\explosionbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\assets\\scripts\\goldpilebehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\goldpilebehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\assets\\scripts\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\assets\\scripts\\goldfarming.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C939DE1-91C0-EA86-F90C-59F9678DB2AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\goldfarming.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +42,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "GoldFarming.cs",
               "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\GoldFarming.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GoldFarming.cs",
@@ -54,8 +50,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GoldFarming.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T22:51:58.089Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-20T22:51:58.089Z"
             },
             {
               "$type": "Document",
@@ -67,11 +62,12 @@
               "RelativeToolTip": "Assets\\Scripts\\UIController.cs",
               "ViewState": "AQIAAEIAAAAAAAAAAAAowBEAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T19:11:02.795Z"
+              "WhenOpened": "2024-05-15T19:11:02.795Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "GoldPileBehaviour.cs",
               "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\GoldPileBehaviour.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GoldPileBehaviour.cs",
@@ -79,19 +75,21 @@
               "RelativeToolTip": "Assets\\Scripts\\GoldPileBehaviour.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T18:36:48.227Z"
+              "WhenOpened": "2024-05-15T18:36:48.227Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ExplosionBehavior.cs",
               "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\ExplosionBehavior.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ExplosionBehavior.cs",
               "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\ExplosionBehavior.cs",
               "RelativeToolTip": "Assets\\Scripts\\ExplosionBehavior.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T18:31:35.391Z"
+              "WhenOpened": "2024-05-15T18:31:35.391Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -101,34 +99,23 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\EntityProperties.cs",
               "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\EntityProperties.cs",
               "RelativeToolTip": "Assets\\Scripts\\EntityProperties.cs",
-              "ViewState": "AQIAAJMAAAAAAAAAAAAIwJ4AAAAuAAAA",
+              "ViewState": "AQIAAKsAAAAAAAAAAAAIwL0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-15T17:51:57.893Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Enemy Prototype.cs",
-              "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\Enemy Prototype.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy Prototype.cs",
-              "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\Enemy Prototype.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy Prototype.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAIA+wFsAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T17:42:12.106Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "LaneDetonation.cs",
               "DocumentMoniker": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\LaneDetonation.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\LaneDetonation.cs",
               "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\LaneDetonation.cs",
               "RelativeToolTip": "Assets\\Scripts\\LaneDetonation.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T18:40:53.157Z"
+              "WhenOpened": "2024-05-15T18:40:53.157Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -138,7 +125,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpawnManager.cs",
               "ToolTip": "C:\\Users\\Paul\\Desktop\\UWBothell\\Spring2024\\CSS385\\Github\\TD385\\TD385\\Assets\\Scripts\\SpawnManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\SpawnManager.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAYwG0AAAAnAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB4AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-15T17:42:09.048Z",
               "EditorCaption": ""

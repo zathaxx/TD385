@@ -93,7 +93,17 @@ public class SpawnManager : MonoBehaviour
             }
             else
             {
-                for (int i = 0; i < difficulty; i++)
+                // Limits enemies spawned per wave to avoid drop in perfromance
+                int waveEnemies;
+                if (difficulty >= 100)
+                {
+                    waveEnemies = 100;
+                }
+                else
+                {
+                    waveEnemies = difficulty;
+                }
+                for (int i = 0; i < waveEnemies; i++)
                 {
                     int enemyIndex = Random.Range(0, enemies.Length);
                     GameObject enemy = Instantiate(enemies[enemyIndex]);

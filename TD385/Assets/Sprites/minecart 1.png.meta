@@ -215,7 +215,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      minecart 1_0: 7953478222679895808
+      minecart 1_1: -4958829935947961673
+      minecart 1_2: 1035541645636246976
+      minecart 1_3: 6236538584977288766
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

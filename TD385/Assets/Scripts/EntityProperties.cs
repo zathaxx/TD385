@@ -164,6 +164,10 @@ public class EntityProperties : MonoBehaviour
             {
                 goldFarming.increaseMiningRate();
             }
+            if (audio != null)
+            {
+                audio.Play();
+            }
         }
     }  
 
