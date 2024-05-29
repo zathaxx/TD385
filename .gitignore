@@ -5,3 +5,6 @@
 **/UserSettings/
 *.sln
 **/Assembly-CSharp.csproj
+**/.vs/
+**/obj/
+**/.vsconfig/
