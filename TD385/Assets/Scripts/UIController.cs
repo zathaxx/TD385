@@ -26,7 +26,7 @@ public class UIController : MonoBehaviour
         Bounds bound = background.GetComponent<SpriteRenderer>().bounds;
         transform.position = new Vector3(topLeft.x + (bound.size.x/2), topLeft.y - (bound.size.y/2), transform.position.z);
         textComponent = GameObject.Find("Balance").GetComponent<TextMeshProUGUI>();
-        coins = 200;
+        coins = 300;
         InfoSprite = GameObject.Find("InfoSprite");
         InfoCanvas = GameObject.Find("InfoCanvas");
         information.transform.position = new Vector3(transform.position.x + bound.size.x, transform.position.y, transform.position.z);
